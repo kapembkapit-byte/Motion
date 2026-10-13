@@ -1,0 +1,30 @@
+{
+  "name": "kuwej-reel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kuwej — Reel Instagram 30 s (1080x1920, 30 fps) en Remotion",
+  "scripts": {
+    "capture": "node scripts/capture-kuwej.mjs",
+    "reference": "bash scripts/analyze-reference.sh",
+    "tts:gemini": "node scripts/tts-gemini.mjs",
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "still": "remotion still KuwejReel out/preview.png --frame=450",
+    "render": "remotion render KuwejReel out/kuwej-reel.mp4",
+    "render:safezones": "remotion render KuwejReel out/kuwej-reel-safezones.mp4 --props='{\"showSafeZones\":true}'"
+  },
+  "dependencies": {
+    "@fontsource/instrument-serif": "5.3.0",
+    "@fontsource/manrope": "5.3.0",
+    "@remotion/cli": "4.0.535",
+    "@remotion/fonts": "4.0.535",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "playwright-core": "1.56.1",
+    "typescript": "5.8.3"
+  }
+}

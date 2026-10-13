@@ -1,0 +1,18 @@
+{
+  "source": "https://kuwej.com/",
+  "capturedAt": null,
+  "logo": null,
+  "whatsapp": null,
+  "screens": {
+    "home": null,
+    "homeFull": null,
+    "menu": null,
+    "cart": null
+  },
+  "categories": [],
+  "audio": {
+    "voiceover": null,
+    "music": null,
+    "musicVolume": 0.18
+  }
+}
