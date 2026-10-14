@@ -5,8 +5,8 @@ import {content} from '../content';
 
 // "Camera" punch-ins (and a short shake on the two big impacts), on the same
 // frames as the impact / hit sound effects (scripts/audio/make_audio.py).
-type Hit = {f: number; a: number; shake?: number};
-const HITS: Hit[] = [
+export type Hit = {f: number; a: number; shake?: number};
+export const HITS_A: Hit[] = [
   {f: 2, a: 0.03}, // « ENVIE » slam
   {f: 50, a: 0.035, shake: 9}, // logo impact
   {f: 151, a: 0.025}, // « GESTE. »
@@ -20,12 +20,12 @@ const HITS: Hit[] = [
   {f: 843, a: 0.018}, // slogan / final chord
 ];
 
-export const Camera: React.FC<{children: React.ReactNode}> = ({children}) => {
+export const Camera: React.FC<{children: React.ReactNode; hits?: Hit[]}> = ({children, hits = HITS_A}) => {
   const frame = useCurrentFrame();
   let s = 1;
   let x = 0;
   let y = 0;
-  for (const h of HITS) {
+  for (const h of hits) {
     const d = frame - h.f;
     if (d < 0 || d > 24) continue;
     const k = d < 2 ? d / 2 : Math.exp(-(d - 2) / 5);

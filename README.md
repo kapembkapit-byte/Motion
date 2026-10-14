@@ -9,8 +9,9 @@ Remotion project for a 30-second Instagram Reel (1080 × 1920, 30 fps, 900 frame
 ```bash
 npm install
 npm run studio            # preview
-npm run render            # → out/kuwej-reel.mp4
+npm run render            # version A « Pub app » → out/kuwej-reel.mp4
+npm run render:afro       # version B « Éditorial / Afro » → out/kuwej-reel-afro.mp4
 npm run render:safezones  # safe-zone overlay check
 python3 scripts/place-voiceover.py      # place the Fish Audio voice-over on the beats (29.9 s)
-python3 scripts/audio/make_audio.py    # original music + sound effects + master mix (pip install -r scripts/audio/requirements.txt)
+npm run audio                          # music + sound effects + masters for A and B (pip install -r scripts/audio/requirements.txt)
 ```

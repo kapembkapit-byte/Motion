@@ -137,6 +137,26 @@ Frames were extracted every 0.5 s and cuts detected at 4.07, 12.2, 14.7, 15.1, 2
 
 Regenerate: `pip install -r scripts/audio/requirements.txt && python3 scripts/audio/make_audio.py && npm run render`.
 
+## 6c. Version B « Éditorial / Afro » (`KuwejReelAfro`)
+
+Same voice-over, same timing, same real content (screenshots, products, prices, logo, WhatsApp). Different visual language and music.
+
+- **Image** (`src/editorial/`):
+  - hook: a 3×3 mosaic of real products whose tiles morph from circles into squares, cut by a tilted blue band carrying the title in Instrument Serif;
+  - brand: an "editorial page" with hairlines, labels and a giant outlined KUWEJ drifting behind;
+  - statement: left-aligned serif, drawn underline, product dots;
+  - journey: the site full-bleed in a large card, scroll + zoom to « Meilleures catégories », tap, then the menu;
+  - categories: a collage of the category page + product cards flipping in 3D with price stickers, the category name outlined behind;
+  - delivery: the free-delivery bar filling to 50.00$ + the real cart banner;
+  - end: products orbiting the logo, serif CTA, WhatsApp, slogan revealed by a mask;
+  - transitions: diagonal blue then ink wipes (the cut happens under cover); camera punches on the hits.
+- **Music** (`scripts/audio/make_audio_afro.py`): an original Afro / Congolese *sebene*-inspired track, 150 BPM, A major (A–D–E–D).
+  - Guitars: interlocking Karplus-Strong plucked strings (16th-note lead, 8th-note counter-line), tuning checked within about ±3 cents.
+  - Bass: rumba line.
+  - Percussion: congas, shaker, cowbell, rim, kick, crash.
+  - Structure: guitar intro, crash on the logo, groove, conga fill into the categories, full sebene, guitar break, re-entry on the end card, final A-major strum on the slogan.
+  - Sound effects synced to the editorial animations; the same ducking/mastering (−14 LUFS, exactly 29.9 s).
+
 ## 7. Project
 
 ```

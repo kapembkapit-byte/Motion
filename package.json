@@ -11,7 +11,9 @@
     "typecheck": "tsc --noEmit",
     "still": "remotion still KuwejReel out/preview.png --frame=450",
     "render": "remotion render KuwejReel out/kuwej-reel.mp4",
-    "render:safezones": "remotion render KuwejReel out/kuwej-reel-safezones.mp4 --props='{\"showSafeZones\":true}'"
+    "render:safezones": "remotion render KuwejReel out/kuwej-reel-safezones.mp4 --props='{\"showSafeZones\":true}'",
+    "render:afro": "remotion render KuwejReelAfro out/kuwej-reel-afro.mp4",
+    "audio": "python3 scripts/audio/make_audio.py && python3 scripts/audio/make_audio_afro.py"
   },
   "dependencies": {
     "@fontsource/barlow-condensed": "^5.3.0",

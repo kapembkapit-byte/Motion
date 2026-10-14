@@ -13,6 +13,7 @@ export const glide = (frame: number, delay = 0) =>
 
 export const easeOut = Easing.bezier(0.16, 1, 0.3, 1);
 export const easeInOut = Easing.bezier(0.65, 0, 0.35, 1);
+export const easeIn = Easing.bezier(0.7, 0, 0.84, 0);
 
 // 0 → 1 between two frames with an easing.
 export const ramp = (frame: number, from: number, to: number, easing = easeInOut) =>
