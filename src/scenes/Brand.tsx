@@ -9,7 +9,7 @@ import {COLORS} from '../theme';
 export const Brand: React.FC = () => {
   const f = useCurrentFrame();
   const p = pop(f, 2, 12, 0.8);
-  const exit = ramp(f, 70, 80);
+  const exit = ramp(f, 77, 87);
   return (
     <AbsoluteFill>
       <div
@@ -28,8 +28,8 @@ export const Brand: React.FC = () => {
         <Logo width={700} />
       </div>
       <div style={{position: 'absolute', top: 780, left: 0, right: 0, textAlign: 'center'}}>
-        <Kinetic text="Ta boutique en ligne" at={12} out={68} size={66} />
-        <Kinetic text="ici même, à Kinshasa" at={18} out={70} size={84} serif color={COLORS.blue} />
+        <Kinetic text="Ta boutique en ligne" at={12} out={75} size={66} />
+        <Kinetic text="à Kinshasa" at={18} out={77} size={84} serif color={COLORS.blue} />
       </div>
     </AbsoluteFill>
   );

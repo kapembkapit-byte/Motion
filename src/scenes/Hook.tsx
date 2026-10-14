@@ -21,7 +21,7 @@ const Bubble: React.FC<{p: Product; i: number}> = ({p, i}) => {
   const b = BUBBLES[i];
   const t = glide(f, b.delay);
   const tPrev = glide(f - 1, b.delay);
-  const implode = interpolate(f, [42, 56], [0, 1], {...clamp, easing: easeInOut});
+  const implode = interpolate(f, [34, 46], [0, 1], {...clamp, easing: easeInOut});
   const x = mix(mix(b.from[0], b.to[0], t), 540, implode);
   const y = mix(mix(b.from[1], b.to[1], t), 900, implode);
   const speed = Math.abs(t - tPrev) * 900 + implode * (1 - implode) * 60;
@@ -54,7 +54,7 @@ export const Hook: React.FC = () => {
         <Bubble key={i} p={p} i={i} />
       ))}
       <div style={{position: 'absolute', top: 760, left: 0, right: 0}}>
-        <Headline lines={[{text: 'Envie', size: 200}, {text: "d'élégance ?", box: true, size: 150}]} at={2} stagger={10} out={44} />
+        <Headline lines={[{text: 'Envie', size: 200}, {text: "d'élégance ?", box: true, size: 150}]} at={2} stagger={10} out={34} />
       </div>
     </AbsoluteFill>
   );

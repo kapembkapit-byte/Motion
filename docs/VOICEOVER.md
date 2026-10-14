@@ -28,17 +28,22 @@ If the brand says the end with a « dj » sound (*kou-WÈDJ*), replace every `Ko
 - Export **WAV** (or MP3 320 kbps).
 - Expected raw length: ~24–27 s of speech. That is normal; the placement brings it to 29.9 s.
 
-## Placement (done in post, ffmpeg)
+## Placement: done (`assets/audio/voiceover.wav`)
 
-| Beat | Starts at | Sentence |
-|---|---|---|
-| Hook | 0,1 s | Envie d'élégance ? |
-| Brand | 2,1 s | Voici Kuwej, ta boutique à Kinshasa. |
-| Statement | 4,8 s | Ton shopping, en un seul geste. |
-| Journey | 7,1 s | Si ce n'est pas élégant, ce n'est pas Kuwej. |
-| Categories | 10,1 / 12,1 / 14,1 / 16,1 / 18,1 / 20,1 / 22,1 s | Des casques. / Des montres. / Des téléphones. / Les accessoires Oraimo. / Des gadgets. / Tes abonnements. / Et bien sûr, la marque Kuwej. |
-| Offer | 24,1 s | Livraison gratuite au-delà de cinquante dollars. |
-| CTA | 26,4 s | Commande sur kuwej.com, ou sur WhatsApp. |
-| Slogan | 28,8 s | Plus mieux, c'est sûr ! |
+Fish Audio file `assets/audio/voiceover-fish-raw.mp3` (29.88 s, voice « voix grave »). Each sentence was cut at the silences and placed on its beat with **no speed change**. The voice is the reference: the video's beats were adjusted to it.
 
-A sentence slightly longer than its beat is sped up by at most 12 % (pitch kept). The file is then padded or cut to exactly 29.9 s, with a 0.1 s fade-out.
+Then exported at **29.900 s exactly** (1,435,200 samples at 48 kHz, mono), normalised to −14 LUFS / −1 dBTP, with a 0.1 s fade-out.
+
+| Sentence | In the video |
+|---|---|
+| Envie d'élégance ? | 0,10 s |
+| Voici Kouwèj, ta boutique à Kinshasa. | 1,75 s |
+| Ton shopping, en un seul geste. | 4,65 s |
+| Si ce n'est pas élégant, ce n'est pas Kouwèj. | 6,95 s |
+| Des casques. / Des montres. / Des téléphones. / Les accessoires Oraimo. / Des gadgets. / Tes abonnements. | 9,75 / 11,35 / 12,95 / 14,52 / 16,25 / 17,75 s |
+| Et bien sûr, la marque Kouwèj. | 19,32 s |
+| Livraison gratuite au-delà de cinquante dollars. | 21,90 s |
+| Commande sur kouwèj point com, ou sur WhatsApp. | 24,85 s |
+| Plus mieux, c'est sûr ! | 28,10 s |
+
+To redo it with a new take, update `speech` (sentence start/end in the new file, from `ffmpeg -af silencedetect=noise=-38dB:d=0.18`) in `scripts/voiceover-placement.json`, then run `python3 scripts/place-voiceover.py` and `npm run render`.

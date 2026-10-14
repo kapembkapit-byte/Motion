@@ -8,7 +8,7 @@ import {COLORS} from '../theme';
 export const Statement: React.FC = () => {
   const f = useCurrentFrame();
   const arcIn = ramp(f, 0, 20);
-  const exit = ramp(f, 60, 70);
+  const exit = ramp(f, 59, 69);
   const r = 360;
   const c = 2 * Math.PI * r;
   return (
@@ -25,7 +25,7 @@ export const Statement: React.FC = () => {
           lines={[{text: 'Ton shopping,'}, {text: 'en un seul'}, {text: 'geste.', box: true, size: 190}]}
           at={2}
           stagger={7}
-          out={60}
+          out={59}
           size={150}
           from={-1}
         />

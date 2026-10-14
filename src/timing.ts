@@ -10,15 +10,24 @@ export const SAFE_BOTTOM = H - 380; // y = 1540
 
 export const s = (seconds: number) => Math.round(seconds * FPS);
 
-// Act boundaries (frames), mirroring the reference rhythm compressed to 30 s:
+// Act boundaries (frames), locked to the placed voice-over (scripts/voiceover-placement.json):
 // hook → brand reveal → statement → app journey → products → offer → end card.
-export const HOOK = {from: 0, to: 60}; // 0 – 2 s
-export const BRAND = {from: 60, to: 140}; // 2 – 4.7 s
-export const STATEMENT = {from: 140, to: 210}; // 4.7 – 7 s
-export const JOURNEY = {from: 210, to: 300}; // 7 – 10 s
-export const CATS = {from: 300, to: 720}; // 10 – 24 s
-export const OFFER = {from: 720, to: 790}; // 24 – 26.3 s
-export const END = {from: 790, to: TOTAL}; // 26.3 – 30 s
-export const TAPES = {from: 66, to: 212}; // ticker tapes span brand + statement
+export const HOOK = {from: 0, to: 48}; // 0 – 1.6 s
+export const BRAND = {from: 48, to: 135}; // 1.6 – 4.5 s
+export const STATEMENT = {from: 135, to: 204}; // 4.5 – 6.8 s
+export const JOURNEY = {from: 204, to: 291}; // 6.8 – 9.7 s
+export const CATS = {from: 291, to: 654}; // 9.7 – 21.8 s
+export const OFFER = {from: 654, to: 738}; // 21.8 – 24.6 s
+export const END = {from: 738, to: TOTAL}; // 24.6 – 30 s
+export const TAPES = {from: 54, to: 206}; // ticker tapes span brand + statement
+
+// Category beats: 1.6 s each, the last one (kuwej Brand + « …la marque Kuwej ») 2.5 s.
+export const LAST_CAT_BEAT = 75;
+export const catBounds = (n: number): number[] => {
+  const total = CATS.to - CATS.from;
+  if (n <= 1) return [0, total];
+  const other = (total - LAST_CAT_BEAT) / (n - 1);
+  return Array.from({length: n}, (_, i) => Math.round(i * other)).concat(total);
+};
 
 export const len = (r: {from: number; to: number}) => r.to - r.from;

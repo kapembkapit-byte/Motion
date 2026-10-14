@@ -10,7 +10,7 @@ import {Phone} from '../components/Phone';
 import {Screen} from '../components/Screen';
 import {TapRipple} from '../components/TapRipple';
 import {COLORS, FONTS, PHONE, SHADOW} from '../theme';
-import {CATS, len} from '../timing';
+import {CATS, catBounds} from '../timing';
 import {JOURNEY_END_POSE} from './Journey';
 
 const PHONE_Y = 1085;
@@ -129,8 +129,10 @@ const CategorySegment: React.FC<{c: Category; i: number; n: number; seg: number}
   const products = c.products.slice(0, 2);
   // Two products: both cards stay up together (readable), the phone shows each page in turn.
   const two = products.length > 1;
-  const starts = two ? [8, 15] : [10];
-  const screenAt = two ? [8, 30] : [10];
+  const fast = seg < 60; // 1.6 s beats: cards land almost immediately
+  const starts = two ? (fast ? [4, 9] : [8, 15]) : [fast ? 5 : 10];
+  const screenAt = two ? (fast ? [4, 24] : [8, 36]) : starts;
+  const outAt = seg - (fast ? 6 : 7);
   const dir = i % 2 === 0 ? 1 : -1;
   const catIn = ramp(t, 0, 9, easeOut);
   const idx = `${String(i + 1).padStart(2, '0')} / ${String(n).padStart(2, '0')}`;
@@ -140,8 +142,8 @@ const CategorySegment: React.FC<{c: Category; i: number; n: number; seg: number}
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 268, left: 50, right: 50}}>
-        <Headline lines={[{text: idx, size: 40, color: COLORS.blue}]} at={0} out={seg - 8} from={dir as 1 | -1} />
-        <Headline lines={[{text: c.name, size: nameSize}]} at={2} out={seg - 8} from={dir as 1 | -1} uppercase={false} />
+        <Headline lines={[{text: idx, size: 40, color: COLORS.blue}]} at={0} out={outAt - 1} from={dir as 1 | -1} />
+        <Headline lines={[{text: c.name, size: nameSize}]} at={1} out={outAt - 1} from={dir as 1 | -1} uppercase={false} />
       </div>
 
       <Phone
@@ -172,7 +174,7 @@ const CategorySegment: React.FC<{c: Category; i: number; n: number; seg: number}
           key={j}
           p={p}
           at={starts[j]}
-          out={seg - 7}
+          out={outAt}
           pose={phonePose}
           cardX={pose.cardX}
           dir={dir as 1 | -1}
@@ -184,10 +186,9 @@ const CategorySegment: React.FC<{c: Category; i: number; n: number; seg: number}
   );
 };
 
-// 10 – 24 s · One 2 s beat per real category (Ordinateurs & Mode excluded), real products & prices.
+// 9.7 – 21.8 s · One beat per real category (Ordinateurs & Mode excluded), real products & prices.
 export const Categories: React.FC = () => {
   const cats = content.categories;
-  const total = len(CATS);
   if (cats.length === 0) {
     return (
       <AbsoluteFill>
@@ -198,7 +199,7 @@ export const Categories: React.FC = () => {
     );
   }
   const n = cats.length;
-  const bounds = cats.map((_, i) => Math.round((i * total) / n)).concat(total);
+  const bounds = catBounds(n);
   return (
     <AbsoluteFill>
       {cats.map((c, i) => (

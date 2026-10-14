@@ -71,6 +71,8 @@ Frames were extracted every 0.5 s and cuts detected at 4.07, 12.2, 14.7, 15.1, 2
 
 ## 5. Storyboard
 
+> **Timing locked to the voice-over** (`src/timing.ts`): Hook 0–1.6 s · Brand 1.6–4.5 s · Statement 4.5–6.8 s · Journey 6.8–9.7 s · Categories 9.7–21.8 s (six 1.6 s beats + 2.5 s for kuwej Brand) · Offer 21.8–24.6 s · End 24.6–30 s. The times in the table below are from the first cut. The scene contents are unchanged, but the voice lines now follow `docs/VOICEOVER.md`.
+
 | # | Time (frames) | Visual / screenshot | Animation · transition | On-screen text (FR) | Voice (FR) |
 |---|---|---|---|---|---|
 | 1 | 0–2 s (0–60) | 6 bubbles with real product photos (first product of each category) | Bubbles fly in with velocity blur; title slam; whip-out + bubbles implode to centre | ENVIE / **D'ÉLÉGANCE ?** | Envie d'élégance ? Viens voir… |
@@ -134,5 +136,5 @@ GEMINI_API_KEY=… npm run tts:gemini   # adds the voice-over (or drop a WAV in 
 - [x] Names, prices and WhatsApp number taken from the export
 - [x] Text inside y 250–1540 (safe-zone render checked)
 - [x] All copy in French
-- [ ] Voice-over audio: needs a TTS key or a WAV file, then align `src/script.ts`
+- [x] Voice-over (Fish Audio) placed beat by beat, exactly 29.900 s, −14 LUFS
 - [ ] Optional: swap « Lumière selfie » (out of stock) once a Gadgets product is back in stock

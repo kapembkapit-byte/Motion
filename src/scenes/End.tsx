@@ -20,15 +20,15 @@ const fadeUp = (f: number, at: number) => {
   };
 };
 
-// 26.3 – 30 s · End card: logo, "Commande sur kuwej.com", WhatsApp CTA with tap,
+// 24.6 – 30 s · End card: logo, "Commande sur kuwej.com", WhatsApp CTA with tap,
 // real number, slogan; phone peeking from the bottom (reference mechanic).
 export const End: React.FC = () => {
   const f = useCurrentFrame();
   const logo = glide(f, 0);
   const phone = glide(f, 6);
-  const press = interpolate(f, [44, 47, 52], [1, 0.94, 1], clamp);
-  const underline = ramp(f, 66, 82);
-  const slogan = pop(f, 56, 14);
+  const press = interpolate(f, [80, 83, 88], [1, 0.94, 1], clamp);
+  const underline = ramp(f, 112, 128);
+  const slogan = pop(f, 102, 14);
 
   return (
     <AbsoluteFill>
@@ -40,8 +40,8 @@ export const End: React.FC = () => {
         <div style={{opacity: interpolate(logo, [0, 0.3], [0, 1], clamp), transform: `translateY(${(1 - logo) * -260}px) rotate(${(1 - logo) * 12}deg)`}}>
           <Logo width={600} />
         </div>
-        <Headline lines={[{text: 'Commande sur', size: 92}, {text: 'kuwej.com', box: true, size: 118, keepCase: true}]} at={12} stagger={6} style={{marginTop: 44}} />
-        <div style={{position: 'relative', marginTop: 48, ...fadeUp(f, 30)}}>
+        <Headline lines={[{text: 'Commande sur', size: 92}, {text: 'kuwej.com', box: true, size: 118, keepCase: true}]} at={8} stagger={6} style={{marginTop: 44}} />
+        <div style={{position: 'relative', marginTop: 48, ...fadeUp(f, 46)}}>
           <div
             style={{
               background: COLORS.blue,
@@ -57,11 +57,11 @@ export const End: React.FC = () => {
           >
             Commander sur WhatsApp
           </div>
-          <TapRipple x={560} y={50} at={44} size={90} />
+          <TapRipple x={560} y={50} at={80} size={90} />
         </div>
         <div
           style={{
-            ...fadeUp(f, 40),
+            ...fadeUp(f, 58),
             marginTop: 26,
             padding: '12px 34px',
             borderRadius: 999,

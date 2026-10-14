@@ -54,8 +54,8 @@ export const Journey: React.FC = () => {
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 280, left: 40, right: 40}}>
-        <Headline lines={[{text: "Si ce n'est pas élégant…", size: 92}]} at={2} out={80} />
-        <Headline lines={[{text: "ce n'est pas Kuwej.", box: true, size: 104}]} at={32} out={80} from={-1} style={{marginTop: 8}} />
+        <Headline lines={[{text: "Si ce n'est pas élégant…", size: 92}]} at={2} out={78} />
+        <Headline lines={[{text: "ce n'est pas Kuwej.", box: true, size: 104}]} at={32} out={78} from={-1} style={{marginTop: 8}} />
       </div>
 
       <Phone

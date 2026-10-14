@@ -11,18 +11,18 @@ import {TapRipple} from '../components/TapRipple';
 import {PHONE, SHADOW} from '../theme';
 import {catPose} from './Categories';
 
-// 24 – 26.3 s · Real cart page; the site's own free-delivery banner lifts out.
+// 21.8 – 24.6 s · Real cart page; the site's own free-delivery banner lifts out.
 export const Offer: React.FC = () => {
   const f = useCurrentFrame();
   const n = content.categories.length;
   const from = n > 0 ? catPose(n - 1) : {x: 540, rotate: 0, tiltY: 0};
   const center = glide(f, 0);
-  const drop = interpolate(f, [58, 70], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)});
+  const drop = interpolate(f, [72, 84], [0, 1], {...clamp, easing: Easing.in(Easing.cubic)});
   const cartIn = ramp(f, 0, 9, easeOut);
   const {cart, cartOffer} = content.screens;
   const pose = {x: 540, y: 1090, scale: 0.88};
   const lift = glide(f, 20);
-  const exit = ramp(f, 56, 64);
+  const exit = ramp(f, 70, 78);
   const tap = cart && cartOffer ? shotToScreen(cart, 390, cartOffer.y + 190) : {x: 226, y: 470};
 
   let card: React.ReactNode = null;
@@ -51,7 +51,7 @@ export const Offer: React.FC = () => {
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 280, left: 40, right: 40}}>
-        <Headline lines={[{text: 'Livraison gratuite', size: 120}, {text: 'au-delà de 50.00$', box: true, size: 112}]} at={2} stagger={8} out={58} />
+        <Headline lines={[{text: 'Livraison gratuite', size: 120}, {text: 'au-delà de 50.00$', box: true, size: 112}]} at={2} stagger={8} out={72} />
       </div>
       <Phone
         x={mix(from.x, pose.x, center)}

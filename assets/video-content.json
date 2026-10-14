@@ -308,7 +308,7 @@
     }
   ],
   "audio": {
-    "voiceover": null,
+    "voiceover": "audio/voiceover.wav",
     "music": null,
     "musicVolume": 0.18
   }
