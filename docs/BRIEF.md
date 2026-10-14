@@ -184,6 +184,15 @@ The reference alternates purple and lavender backgrounds. Here **#EDEDED stays o
 
 ⚠ **Music rights**: this track belongs to the reference ad. Before publishing, check that Kuwej holds a licence for it, or replace it (`assets/audio/music-signature.wav`). The timing does not depend on the file, only on the 110 BPM grid.
 
+### 6e. Version C in 16:9 (`KuwejSignature169`), shot-for-shot
+
+Requested after review (« exactement comme la vidéo d'inspiration »).
+- **Format**: 1920×1080, 30 fps, 55 s, the same music track.
+- **Shots**: every shot reproduces the reference at the same time — positions, phone sizes (cropped by the frame, ~1.8× scale), zoom-in on the search bar with typing then zoom-out, giant word sliding and shrinking, logo zoom, product rows and ring.
+- **Text mechanics**: words arriving one by one widely spaced then tightening, some lines typed letter by letter, slow upward drift.
+- **Colours** (choice approved by the client): reference dark-purple scenes → **#0746C0** with #EDEDED text, key words in bold; reference light scenes → **#EDEDED** with Kuwej-blue text, key words in #1A1A1A. Only the three brand colours are used. The background alternation is a conscious exception to « #EDEDED on every scene ».
+- **Copy**: the same French Kuwej copy as the 9:16 version; the end card reproduces the reference's logo + line + two badges (WhatsApp and kuwej.com) and adds the slogan.
+
 ## 7. Project
 
 ```
