@@ -309,7 +309,8 @@
   ],
   "audio": {
     "voiceover": "audio/voiceover.wav",
-    "music": null,
-    "musicVolume": 0.18
+    "music": "audio/music.wav",
+    "musicVolume": 1,
+    "master": "audio/master.wav"
   }
 }

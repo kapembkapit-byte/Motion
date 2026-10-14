@@ -32,7 +32,8 @@ export type Content = {
     checkout?: Shot | null;
   };
   categories: Category[];
-  audio: {voiceover: string | null; music: string | null; musicVolume: number};
+  // master = final mix (voice + music + sfx); if absent, voiceover + music are played.
+  audio: {voiceover: string | null; music: string | null; musicVolume: number; master?: string | null};
 };
 
 export const content = raw as unknown as Content;

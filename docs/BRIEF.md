@@ -105,6 +105,38 @@ Frames were extracted every 0.5 s and cuts detected at 4.07, 12.2, 14.7, 15.1, 2
 - **Logo:** proportional scaling only. Rounded corners clip only its white margin; no recolour, filter or distortion.
 - **Safe zone:** all text sits between y 250 and y 1540. Only the decorative bottom phone in the end card crosses into the bottom band.
 
+## 6b. Music & sound design (original, generated in code)
+
+`scripts/audio/make_audio.py` (numpy/scipy). Licence-free: everything is synthesised, nothing is downloaded.
+
+- **Track**: 150 BPM, half-time feel, D minor: Dm9 – B♭maj9 – Fmaj9 – C6/9. Instruments: kick, clap, hats, sub bass, saw pad, FM bell arpeggio.
+  - The grid is offset by 0.1 s so that **each category beat is exactly one bar** (1.6 s).
+  - Structure:
+    - filtered intro on « Envie d'élégance ? »;
+    - drop on the logo (1.67 s);
+    - light groove under brand / statement / journey;
+    - filter build + snare roll into the categories;
+    - full groove (bell arpeggio) for 9 bars;
+    - break before the end card;
+    - re-entry on the end-card impact (24.6 s);
+    - stop, then final Dm9 chord + bells on the slogan (28.1 s), ringing out.
+- **Sound effects** (on the same frames as the animations):
+  - whoosh on every title whip and phone move;
+  - pops when bubbles and cards land;
+  - tap clicks on every tap ripple;
+  - « ding » on every price tag (rising note per category);
+  - hits on the blue blocks;
+  - impacts on the logo and the end card;
+  - risers before the drops;
+  - chime on the logo and the slogan.
+- **Mix**:
+  - music ducked −8 dB under the voice (sidechain from the voice envelope), effects −3 dB;
+  - stems at voice −14.3 / music −25.2 / effects −26.5 LUFS;
+  - master normalised in two passes to **−14 LUFS, −1 dBTP**, exactly 29.900 s, 48 kHz stereo (`assets/audio/master.wav`).
+- **Image**: camera punch-ins (+1.2 to 3.5 %) on the same hits, plus a short shake on the two impacts (`src/components/Camera.tsx`).
+
+Regenerate: `pip install -r scripts/audio/requirements.txt && python3 scripts/audio/make_audio.py && npm run render`.
+
 ## 7. Project
 
 ```
@@ -136,5 +168,6 @@ GEMINI_API_KEY=… npm run tts:gemini   # adds the voice-over (or drop a WAV in 
 - [x] Names, prices and WhatsApp number taken from the export
 - [x] Text inside y 250–1540 (safe-zone render checked)
 - [x] All copy in French
-- [x] Voice-over (Fish Audio) placed beat by beat, exactly 29.900 s, −14 LUFS
+- [x] Voice-over (Fish Audio) placed beat by beat, exactly 29.900 s
+- [x] Original music + sound effects synced to the frame, music ducked under the voice, master −14 LUFS / −1 dBTP
 - [ ] Optional: swap « Lumière selfie » (out of stock) once a Gadgets product is back in stock

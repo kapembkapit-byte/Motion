@@ -11,5 +11,6 @@ npm install
 npm run studio            # preview
 npm run render            # → out/kuwej-reel.mp4
 npm run render:safezones  # safe-zone overlay check
-GEMINI_API_KEY=… npm run tts:gemini   # optional: generate and add the voice-over
+python3 scripts/place-voiceover.py      # place the Fish Audio voice-over on the beats (29.9 s)
+python3 scripts/audio/make_audio.py    # original music + sound effects + master mix (pip install -r scripts/audio/requirements.txt)
 ```

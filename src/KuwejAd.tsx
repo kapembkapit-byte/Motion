@@ -1,5 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile} from 'remotion';
+import {Camera} from './components/Camera';
 import {SafeZones} from './components/SafeZones';
 import {Tapes} from './components/Tapes';
 import {content} from './content';
@@ -27,17 +28,25 @@ const acts = [
 
 export const KuwejAd: React.FC<KuwejAdProps> = ({showSafeZones}) => (
   <AbsoluteFill style={{background: COLORS.bg, overflow: 'hidden'}}>
-    {acts.map(({r, name, C}) => (
-      <Sequence key={name} from={r.from} durationInFrames={len(r)} name={name}>
-        <C />
+    <Camera>
+      {acts.map(({r, name, C}) => (
+        <Sequence key={name} from={r.from} durationInFrames={len(r)} name={name}>
+          <C />
+        </Sequence>
+      ))}
+      <Sequence from={TAPES.from} durationInFrames={len(TAPES)} name="Rubans">
+        <Tapes y={1190} out={len(TAPES) - 12} />
       </Sequence>
-    ))}
-    <Sequence from={TAPES.from} durationInFrames={len(TAPES)} name="Rubans">
-      <Tapes y={1190} out={len(TAPES) - 12} />
-    </Sequence>
+    </Camera>
 
-    {content.audio.voiceover && <Audio src={staticFile(content.audio.voiceover)} />}
-    {content.audio.music && <Audio src={staticFile(content.audio.music)} volume={content.audio.musicVolume} />}
+    {content.audio.master ? (
+      <Audio src={staticFile(content.audio.master)} />
+    ) : (
+      <>
+        {content.audio.voiceover && <Audio src={staticFile(content.audio.voiceover)} />}
+        {content.audio.music && <Audio src={staticFile(content.audio.music)} volume={content.audio.musicVolume} />}
+      </>
+    )}
 
     {showSafeZones && <SafeZones />}
   </AbsoluteFill>
