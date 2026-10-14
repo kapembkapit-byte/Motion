@@ -16,14 +16,14 @@ const voice = process.env.GEMINI_VOICE || 'Charon';
 
 // Must match src/script.ts and docs/VOICEOVER.md.
 const STYLE = `Lis le texte suivant en français, avec une voix d'homme grave, chaude et profonde, très naturelle, proche du micro, comme une publicité haut de gamme. Accent francophone neutre avec une légère chaleur d'Afrique centrale, sans exagération. Commence bas et intrigant ; deviens chaleureux et fier sur « si ce n'est pas élégant… ce n'est pas Kuwej » ; puis énumère les catégories avec une énergie qui monte, une toutes les deux secondes ; termine enthousiaste et direct, et pose le slogan final avec assurance et un sourire dans la voix. Les points de suspension sont des respirations courtes. Appuie sur : « élégance », « Kuwej », « élégant », « gratuite », « kuwej.com », « WhatsApp », « c'est sûr ». Durée totale : 29 secondes maximum.`;
-const TEXT = `Envie d'élégance ? Viens voir…
-Voici Kuwej. Ta boutique en ligne, ici même, à Kinshasa.
+const TEXT = `Envie d'élégance ?
+Voici Kouwèj, ta boutique à Kinshasa.
 Ton shopping, en un seul geste.
-Parce qu'ici, si ce n'est pas élégant… ce n'est pas Kuwej.
-Des casques… des montres… des téléphones… les accessoires Oraimo… des gadgets… tes abonnements… et bien sûr, la marque Kuwej.
-Et la livraison est gratuite au-delà de cinquante dollars.
-Commande dès maintenant sur kuwej.com, ou sur WhatsApp.
-Kuwej. Plus mieux, c'est sûr !`;
+Si ce n'est pas élégant, ce n'est pas Kouwèj.
+Des casques. Des montres. Des téléphones. Les accessoires Oraimo. Des gadgets. Tes abonnements. Et bien sûr, la marque Kouwèj.
+Livraison gratuite au-delà de cinquante dollars.
+Commande sur kouwèj point com, ou sur WhatsApp.
+Plus mieux, c'est sûr !`;
 
 const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
   method: 'POST',
