@@ -1,0 +1,35 @@
+{
+  "name": "kuwej-reel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kuwej — Reel Instagram 30 s (1080x1920, 30 fps) en Remotion",
+  "scripts": {
+    "capture": "node scripts/capture-kuwej.mjs",
+    "reference": "bash scripts/analyze-reference.sh",
+    "tts:gemini": "node scripts/tts-gemini.mjs",
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "still": "remotion still KuwejReel out/preview.png --frame=450",
+    "render": "remotion render KuwejReel out/kuwej-reel.mp4",
+    "render:safezones": "remotion render KuwejReel out/kuwej-reel-safezones.mp4 --props='{\"showSafeZones\":true}'",
+    "render:afro": "remotion render KuwejReelAfro out/kuwej-reel-afro.mp4",
+    "audio": "python3 scripts/audio/make_audio.py && python3 scripts/audio/make_audio_afro.py",
+    "render:signature": "remotion render KuwejReelSignature out/kuwej-reel-signature.mp4",
+    "render:signature169": "remotion render KuwejSignature169 out/kuwej-signature-16x9.mp4"
+  },
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "@fontsource/manrope": "5.3.0",
+    "@remotion/cli": "4.0.535",
+    "@remotion/fonts": "4.0.535",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "playwright-core": "1.56.1",
+    "typescript": "5.8.3"
+  }
+}

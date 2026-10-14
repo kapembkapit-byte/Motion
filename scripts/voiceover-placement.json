@@ -1,0 +1,23 @@
+{
+  "source": "audio/voiceover-fish-raw.mp3",
+  "output": "audio/voiceover.wav",
+  "duration": 29.9,
+  "fadeOut": 0.1,
+  "note": "speech = [start, end] of each sentence in the raw Fish Audio file (from silencedetect); at = where the sentence starts in the video (s).",
+  "segments": [
+    {"text": "Envie d'élégance ?", "speech": [0.0, 1.144], "at": 0.10},
+    {"text": "Voici Kouwèj, ta boutique à Kinshasa.", "speech": [1.646, 4.237], "at": 1.75},
+    {"text": "Ton shopping, en un seul geste.", "speech": [4.843, 6.837], "at": 4.65},
+    {"text": "Si ce n'est pas élégant, ce n'est pas Kouwèj.", "speech": [7.294, 9.834], "at": 6.95},
+    {"text": "Des casques.", "speech": [10.406, 11.131], "at": 9.75},
+    {"text": "Des montres.", "speech": [11.353, 12.084], "at": 11.35},
+    {"text": "Des téléphones.", "speech": [12.297, 13.266], "at": 12.95},
+    {"text": "Les accessoires Oraimo.", "speech": [13.732, 15.353], "at": 14.52},
+    {"text": "Des gadgets.", "speech": [15.799, 16.649], "at": 16.25},
+    {"text": "Tes abonnements.", "speech": [16.949, 17.760], "at": 17.75},
+    {"text": "Et bien sûr, la marque Kouwèj.", "speech": [18.052, 20.486], "at": 19.32},
+    {"text": "Livraison gratuite au-delà de cinquante dollars.", "speech": [20.925, 23.623], "at": 21.90},
+    {"text": "Commande sur kouwèj point com, ou sur WhatsApp.", "speech": [24.161, 27.263], "at": 24.85},
+    {"text": "Plus mieux, c'est sûr !", "speech": [27.798, 29.502], "at": 28.10}
+  ]
+}
