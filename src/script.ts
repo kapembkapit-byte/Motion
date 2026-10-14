@@ -1,30 +1,32 @@
-import {s} from './timing';
+import {CATS} from './timing';
 
-// French voice-over, split into caption chunks (frames @ 30 fps).
-// `caption: false` = the same words are already on screen as titles,
-// so the subtitle is hidden to avoid duplicates.
-// After generating the real voice-over, adjust from/to to the audio.
-export type Line = {from: number; to: number; text: string; caption: boolean};
+// French voice-over (72 words). Every line is also on screen as a kinetic title
+// (the reference uses big kinetic titles as its subtitles), so no extra subtitle pill.
+// After generating the real voice-over, align from/to to the audio.
+export type Line = {from: number; to: number; text: string};
+
+const seg = (CATS.to - CATS.from) / 7;
+const cat = (i: number, text: string): Line => ({
+  from: Math.round(CATS.from + i * seg + 2),
+  to: Math.round(CATS.from + (i + 1) * seg - 3),
+  text,
+});
 
 export const VOICEOVER: Line[] = [
-  // 0 – 3 s · Hook (low, intriguing)
-  {from: s(0.2), to: s(2.8), text: "Et si l'élégance… tenait enfin dans ta poche ?", caption: false},
-  // 3 – 10 s · Store (warm, calm)
-  {from: s(3.2), to: s(4.4), text: 'Voici Kuwej.', caption: true},
-  {from: s(4.4), to: s(6.4), text: 'Ta boutique en ligne, ici, à Kinshasa.', caption: true},
-  {from: s(6.6), to: s(8.0), text: 'Tu ouvres… tu explores…', caption: true},
-  {from: s(8.0), to: s(9.8), text: 'et tout est là, en quelques gestes.', caption: true},
-  // 10 – 24 s · Categories (energy rising)
-  {from: s(10.2), to: s(12.0), text: 'Des produits choisis avec soin,', caption: true},
-  {from: s(12.0), to: s(13.8), text: 'des prix clairs, affichés.', caption: true},
-  {from: s(14.2), to: s(16.4), text: 'Une catégorie… puis une autre…', caption: true},
-  {from: s(16.4), to: s(18.8), text: 'et toujours la même exigence.', caption: true},
-  {from: s(19.3), to: s(21.4), text: "Parce qu'ici, si ce n'est pas élégant…", caption: true},
-  {from: s(21.4), to: s(23.7), text: "ce n'est pas Kuwej.", caption: true},
-  // 24 – 30 s · CTA (enthusiastic, then confident and smiling)
-  {from: s(24.2), to: s(26.6), text: 'Commande dès maintenant sur kuwej.com…', caption: false},
-  {from: s(26.6), to: s(28.2), text: 'ou écris-nous sur WhatsApp.', caption: false},
-  {from: s(28.4), to: s(29.8), text: "Kuwej. Plus mieux, c'est sûr !", caption: false},
+  {from: 3, to: 55, text: "Envie d'élégance ? Viens voir…"},
+  {from: 63, to: 138, text: 'Voici Kuwej. Ta boutique en ligne, ici même, à Kinshasa.'},
+  {from: 143, to: 207, text: 'Ton shopping, en un seul geste.'},
+  {from: 213, to: 297, text: "Parce qu'ici, si ce n'est pas élégant… ce n'est pas Kuwej."},
+  cat(0, 'Des casques…'),
+  cat(1, 'des montres…'),
+  cat(2, 'des téléphones…'),
+  cat(3, 'les accessoires Oraimo…'),
+  cat(4, 'des gadgets…'),
+  cat(5, 'tes abonnements…'),
+  cat(6, 'et bien sûr, la marque Kuwej.'),
+  {from: 722, to: 788, text: 'Et la livraison est gratuite au-delà de cinquante dollars.'},
+  {from: 794, to: 862, text: 'Commande dès maintenant sur kuwej.com, ou sur WhatsApp.'},
+  {from: 864, to: 898, text: "Kuwej. Plus mieux, c'est sûr !"},
 ];
 
 export const VOICEOVER_TEXT = VOICEOVER.map((l) => l.text).join(' ');

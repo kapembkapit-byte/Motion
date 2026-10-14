@@ -332,7 +332,7 @@ for (const c of keptCategories.slice(0, MAX_CATEGORIES)) {
       continue;
     }
     const s = await shot(`prod-${slug(c.name)}-${slug(d.name)}`);
-    products.push({name: d.name, price: d.price, url, screenshot: s, jsonLd: d.ld});
+    products.push({name: d.name, price: d.price, oldPrice: null, url, screenshot: s, jsonLd: d.ld});
     log('  product', d.name, '→', d.price);
   }
   if (products.length === 0) report.missing.push(`products for "${c.name}"`);

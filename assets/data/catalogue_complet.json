@@ -1,0 +1,2948 @@
+{
+  "store_name": "kuwej",
+  "site_url": "https://kuwej.com",
+  "currency": "USD",
+  "currency_symbol": "$",
+  "total_products": 175,
+  "categories_count": 36,
+  "categories": [
+    {
+      "id": 440,
+      "name": "Abonnement & streaming",
+      "slug": "abonnement-streaming",
+      "count": 6,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/abonnement-streaming/"
+    },
+    {
+      "id": 387,
+      "name": "Accessoires Oraimo",
+      "slug": "accessoires-oraimo",
+      "count": 85,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/accessoires-oraimo/"
+    },
+    {
+      "id": 404,
+      "name": "Airprods Authentique",
+      "slug": "airprods-authentique",
+      "count": 7,
+      "parent_id": 384,
+      "parent_name": "Casques Bluetooth",
+      "url": "https://kuwej.com/product-category/casques-bluetooth/airprods-authentique/"
+    },
+    {
+      "id": 424,
+      "name": "Bracelets Montres",
+      "slug": "bracelets-montres",
+      "count": 5,
+      "parent_id": 411,
+      "parent_name": "Montres Connectées",
+      "url": "https://kuwej.com/product-category/montres-connectees/bracelets-montres/"
+    },
+    {
+      "id": 534,
+      "name": "Câbles & Adaptateurs Oraimo",
+      "slug": "cables-adaptateurs-oraimo",
+      "count": 18,
+      "parent_id": 387,
+      "parent_name": "Accessoires Oraimo",
+      "url": "https://kuwej.com/product-category/accessoires-oraimo/cables-adaptateurs-oraimo/"
+    },
+    {
+      "id": 408,
+      "name": "Casque Bluetooth Tendance",
+      "slug": "casque-bluetooth-tendance",
+      "count": 10,
+      "parent_id": 384,
+      "parent_name": "Casques Bluetooth",
+      "url": "https://kuwej.com/product-category/casques-bluetooth/casque-bluetooth-tendance/"
+    },
+    {
+      "id": 384,
+      "name": "Casques Bluetooth",
+      "slug": "casques-bluetooth",
+      "count": 26,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/casques-bluetooth/"
+    },
+    {
+      "id": 423,
+      "name": "Chargeurs Montres Connectées",
+      "slug": "chargeurs-montres-connectees",
+      "count": 1,
+      "parent_id": 411,
+      "parent_name": "Montres Connectées",
+      "url": "https://kuwej.com/product-category/montres-connectees/chargeurs-montres-connectees/"
+    },
+    {
+      "id": 389,
+      "name": "Chargeurs Oraimo",
+      "slug": "chargeurs-oraimo",
+      "count": 11,
+      "parent_id": 387,
+      "parent_name": "Accessoires Oraimo",
+      "url": "https://kuwej.com/product-category/accessoires-oraimo/chargeurs-oraimo/"
+    },
+    {
+      "id": 422,
+      "name": "Chargeurs Téléphones",
+      "slug": "chargeurs-telephones",
+      "count": 18,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/chargeurs-telephones/"
+    },
+    {
+      "id": 533,
+      "name": "Écouteurs & Audio Oraimo",
+      "slug": "ecouteurs-audio-oraimo",
+      "count": 36,
+      "parent_id": 387,
+      "parent_name": "Accessoires Oraimo",
+      "url": "https://kuwej.com/product-category/accessoires-oraimo/ecouteurs-audio-oraimo/"
+    },
+    {
+      "id": 410,
+      "name": "Gadgets & Accessoires",
+      "slug": "gadgets-accessoires",
+      "count": 8,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/gadgets-accessoires/"
+    },
+    {
+      "id": 412,
+      "name": "Gaming",
+      "slug": "gaming",
+      "count": 0,
+      "parent_id": 410,
+      "parent_name": "Gadgets & Accessoires",
+      "url": "https://kuwej.com/product-category/gadgets-accessoires/gaming/"
+    },
+    {
+      "id": 409,
+      "name": "Infinix Mobile",
+      "slug": "infinix-mobile",
+      "count": 0,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/infinix-mobile/"
+    },
+    {
+      "id": 388,
+      "name": "iPhones",
+      "slug": "iphones",
+      "count": 9,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/iphones/"
+    },
+    {
+      "id": 386,
+      "name": "Itel Mobile",
+      "slug": "itel-mobile",
+      "count": 0,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/itel-mobile/"
+    },
+    {
+      "id": 385,
+      "name": "kuwej Brand",
+      "slug": "kuwej-brand",
+      "count": 6,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/kuwej-brand/"
+    },
+    {
+      "id": 418,
+      "name": "Lumières Chambres",
+      "slug": "lumieres-chambres",
+      "count": 0,
+      "parent_id": 410,
+      "parent_name": "Gadgets & Accessoires",
+      "url": "https://kuwej.com/product-category/gadgets-accessoires/lumieres-chambres/"
+    },
+    {
+      "id": 420,
+      "name": "Lumières Selfies",
+      "slug": "lumieres-selfies",
+      "count": 1,
+      "parent_id": 410,
+      "parent_name": "Gadgets & Accessoires",
+      "url": "https://kuwej.com/product-category/gadgets-accessoires/lumieres-selfies/"
+    },
+    {
+      "id": 493,
+      "name": "lunettes intelligentes",
+      "slug": "lunettes-intelligentes",
+      "count": 2,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/lunettes-intelligentes/"
+    },
+    {
+      "id": 426,
+      "name": "Maillots & Baskets",
+      "slug": "maillots-baskets",
+      "count": 0,
+      "parent_id": 413,
+      "parent_name": "Tendance & Mode",
+      "url": "https://kuwej.com/product-category/tendance-mode/maillots-baskets/"
+    },
+    {
+      "id": 411,
+      "name": "Montres Connectées",
+      "slug": "montres-connectees",
+      "count": 31,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/montres-connectees/"
+    },
+    {
+      "id": 407,
+      "name": "Ordinateurs Portables",
+      "slug": "ordinateurs-portables",
+      "count": 0,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/ordinateurs-portables/"
+    },
+    {
+      "id": 425,
+      "name": "Pochettes Airpods",
+      "slug": "pochettes-airpods",
+      "count": 1,
+      "parent_id": 384,
+      "parent_name": "Casques Bluetooth",
+      "url": "https://kuwej.com/product-category/casques-bluetooth/pochettes-airpods/"
+    },
+    {
+      "id": 421,
+      "name": "Pochettes Téléphones",
+      "slug": "pochettes-telephones",
+      "count": 0,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/pochettes-telephones/"
+    },
+    {
+      "id": 390,
+      "name": "Power bank oraimo",
+      "slug": "power-bank-oraimo",
+      "count": 20,
+      "parent_id": 387,
+      "parent_name": "Accessoires Oraimo",
+      "url": "https://kuwej.com/product-category/accessoires-oraimo/power-bank-oraimo/"
+    },
+    {
+      "id": 501,
+      "name": "Produits Numeriques",
+      "slug": "produits-numeriques",
+      "count": 0,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/produits-numeriques/"
+    },
+    {
+      "id": 419,
+      "name": "Ring Lights",
+      "slug": "ring-lights",
+      "count": 0,
+      "parent_id": 410,
+      "parent_name": "Gadgets & Accessoires",
+      "url": "https://kuwej.com/product-category/gadgets-accessoires/ring-lights/"
+    },
+    {
+      "id": 403,
+      "name": "Samsung",
+      "slug": "samsung",
+      "count": 0,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/samsung/"
+    },
+    {
+      "id": 415,
+      "name": "Smart Watch Serie",
+      "slug": "smart-watch-serie",
+      "count": 19,
+      "parent_id": 411,
+      "parent_name": "Montres Connectées",
+      "url": "https://kuwej.com/product-category/montres-connectees/smart-watch-serie/"
+    },
+    {
+      "id": 417,
+      "name": "Smart Watch Sim",
+      "slug": "smart-watch-sim",
+      "count": 1,
+      "parent_id": 411,
+      "parent_name": "Montres Connectées",
+      "url": "https://kuwej.com/product-category/montres-connectees/smart-watch-sim/"
+    },
+    {
+      "id": 414,
+      "name": "Smart Watches Ultra",
+      "slug": "smart-watches-ultra",
+      "count": 5,
+      "parent_id": 411,
+      "parent_name": "Montres Connectées",
+      "url": "https://kuwej.com/product-category/montres-connectees/smart-watches-ultra/"
+    },
+    {
+      "id": 383,
+      "name": "Tablettes Portables",
+      "slug": "tablettes-portables",
+      "count": 0,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/tablettes-portables/"
+    },
+    {
+      "id": 405,
+      "name": "Tecno Mobile",
+      "slug": "tecno-mobile",
+      "count": 0,
+      "parent_id": 406,
+      "parent_name": "Téléphones",
+      "url": "https://kuwej.com/product-category/telephones-3/tecno-mobile/"
+    },
+    {
+      "id": 406,
+      "name": "Téléphones",
+      "slug": "telephones-3",
+      "count": 26,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/telephones-3/"
+    },
+    {
+      "id": 413,
+      "name": "Tendance & Mode",
+      "slug": "tendance-mode",
+      "count": 0,
+      "parent_id": 0,
+      "parent_name": null,
+      "url": "https://kuwej.com/product-category/tendance-mode/"
+    }
+  ],
+  "products": [
+    {
+      "id": 21097,
+      "name": "Abonnement Amazon Prime Video en RDC",
+      "price": 10,
+      "regular_price": 15,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Abonnement & streaming"
+      ],
+      "url": "https://kuwej.com/product/abonnement-amazon-prime-video-en-rdc/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 25158,
+      "name": "Abonnement Apple One - Kinshasa   RDC",
+      "price": 13,
+      "regular_price": 25,
+      "sale_price": 13,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Abonnement & streaming"
+      ],
+      "url": "https://kuwej.com/product/abonnement-apple-one-kinshasa-rdc/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 25152,
+      "name": "Abonnement DAZN — Accès streaming sport RDC",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": 19,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Abonnement & streaming"
+      ],
+      "url": "https://kuwej.com/product/abonnement-dazn-kinshasa-rdc/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 24893,
+      "name": "Abonnement Disney+ à Kinshasa – Accès immédiat | Films, Séries & Marvel",
+      "price": 15,
+      "regular_price": 19,
+      "sale_price": 15,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Abonnement & streaming"
+      ],
+      "url": "https://kuwej.com/product/abonnement-disney-plus-kinshasa/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 20384,
+      "name": "Abonnement Netflix en RDC – Kuwej",
+      "price": 10,
+      "regular_price": 15,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Abonnement & streaming"
+      ],
+      "url": "https://kuwej.com/product/abonnement-netflix-en-rdc-kuwej/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 24863,
+      "name": "Abonnement Spotify Premium — Kinshasa | 1 Mois",
+      "price": 10,
+      "regular_price": 12,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Abonnement & streaming"
+      ],
+      "url": "https://kuwej.com/product/abonnement-spotify-premium-kinshasa/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 20269,
+      "name": "AI Smart Glasses avec caméra et connectivité Bluetooth  – GS380 | Élégance & technologie",
+      "price": 250,
+      "regular_price": 250,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "lunettes intelligentes",
+        "Téléphones"
+      ],
+      "url": "https://kuwej.com/product/ai-smart-glasses-avec-camera-et-connectivite-bluetooth-gs380-elegance-technologie/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14621,
+      "name": "AirPods 2 Apple",
+      "price": 99.99,
+      "regular_price": 99.99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Airprods Authentique"
+      ],
+      "url": "https://kuwej.com/product/airpods-2-apple/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14651,
+      "name": "Airpods 3 génération Apple",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Airprods Authentique",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/airpods-3-generation-apple/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24239,
+      "name": "Airpods Pro - semi Apple orginale",
+      "price": 25,
+      "regular_price": 100,
+      "sale_price": 25,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Airprods Authentique",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/airpods-pro-semi-apple-orginale/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 17951,
+      "name": "Apple Airpods  4 ANC - Semi Originale (2024)",
+      "price": 199,
+      "regular_price": 199,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Airprods Authentique",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/apple-airpods-4-anc-semi-originale-2024/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14622,
+      "name": "Apple Airpods Pro 2 semi originale authentique",
+      "price": 29,
+      "regular_price": 119,
+      "sale_price": 29,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Airprods Authentique",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/apple-airpods-pro-2-semi-originale-authentique/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 14632,
+      "name": "Apple Airpods Pro - semi orginale authentique",
+      "price": 25,
+      "regular_price": 100,
+      "sale_price": 25,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Airprods Authentique",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/apple-airpods-pro-semi-orginale-authentique/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 13861,
+      "name": "Box Android TVAndroid 13 8K 5G",
+      "price": 99.95,
+      "regular_price": 99.95,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/box-android-tv/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13854,
+      "name": "Box Android TV 4K 5G16GiGa",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/box-android-tv-4k-5g/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14612,
+      "name": "bracelet apple watch smart watch sport Blanc 42/44/45mm",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Bracelets Montres"
+      ],
+      "url": "https://kuwej.com/product/bracelet-apple-watch-smart-watch-sport-blanc-42-44-45mm/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14611,
+      "name": "bracelet apple watch smart watch sport Noir  42/44/45mm",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Bracelets Montres"
+      ],
+      "url": "https://kuwej.com/product/bracelet-apple-watch-smart-watch-sport-noir-42-44-45mm/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 14592,
+      "name": "bracelet apple watch smart watch sport olive  42/44/45mm",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Bracelets Montres"
+      ],
+      "url": "https://kuwej.com/product/bracelet-apple-watch-smart-watch-sport-olive-42-44-45mm/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13840,
+      "name": "Bracelet Câble USBType-C",
+      "price": 15,
+      "regular_price": 15,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/bracelet-cable-usb-type-c/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24031,
+      "name": "Bracelet Nylon Outdoor Smart Watch – Boucle Sécurisée Orange",
+      "price": 10,
+      "regular_price": 20,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Bracelets Montres",
+        "Montres Connectées"
+      ],
+      "url": "https://kuwej.com/product/bracelet-nylon-outdoor-smart-watch-boucle-securisee-orange/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 24026,
+      "name": "Bracelet Sport Silicone Smart Watch Série 10 – Texture Antidérapante",
+      "price": 10,
+      "regular_price": 20,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Bracelets Montres",
+        "Montres Connectées"
+      ],
+      "url": "https://kuwej.com/product/bracelet-sport-silicone-smart-watch-serie-10-texture-antiderapante/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 14603,
+      "name": "Casque Bluetooth P9 Pro Max Bleu",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/casque-bluetooth-p9-pro-max-bleu/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14602,
+      "name": "Casque Bluetooth P9 Pro Max gris",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/casque-bluetooth-p9-pro-max-gris-2/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13790,
+      "name": "Casque Bluetooth P9 Pro Max Noir",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/casque-bluetooth-p9-pro-max-noir/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14604,
+      "name": "Casque Bluetooth P9 Pro Max Rouge",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/casque-bluetooth-p9-pro-max-rouge/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14609,
+      "name": "Casque Bluetooth P9 Pro Max Verte",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/casque-bluetooth-p9-pro-max-verte/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14902,
+      "name": "Chargeur Android 20w oraimo",
+      "price": 10,
+      "regular_price": 14.99,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo",
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/chargeur-android-20w-oraimo/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 14903,
+      "name": "Chargeur Samsung  20w oraimo",
+      "price": 10,
+      "regular_price": 14.99,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo",
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/chargeur-android-20w-oraimo-2/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 14905,
+      "name": "Chargeur iPhone 20w oraimo",
+      "price": 10,
+      "regular_price": 14.99,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo",
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/chargeur-android-20w-oraimo-2-2/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 17448,
+      "name": "Chargeur Apple 35W pour iPhone 15 Pro Max et IPad avec câble stressé en nylon  | Certifié MFi",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/chargeur-apple-35w-pour-iphone-15-pro-max-et-ipad-avec-cable-stresse-en-nylon-certifie-mfi/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14781,
+      "name": "Chargeur iPhone Type C 20W",
+      "price": 10,
+      "regular_price": 15,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Téléphones",
+        "iPhones"
+      ],
+      "url": "https://kuwej.com/product/chargeur-iphone-type-c-20w/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 17043,
+      "name": "Chargeur iPhone Type C 20W pour iPhone X jusqu’à 14",
+      "price": 10,
+      "regular_price": 15,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Téléphones",
+        "iPhones"
+      ],
+      "url": "https://kuwej.com/product/chargeur-iphone-type-c-20w-pour-iphone-x-jusqua-14/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 21595,
+      "name": "Chargeur iPhone Type-c vers Type-C 15 16 17 Pro Max 35W – Câble en nylon tressé certifié Apple MFi",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Téléphones",
+        "Téléphones"
+      ],
+      "url": "https://kuwej.com/product/chargeur-iphone-type-c-vers-type-c-15-16-17-pro-max-35w-cable-en-nylon-tresse-certifie-apple-mfi/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 26456,
+      "name": "Chargeur iPhone Type-C vers Type-C 20W",
+      "price": 10,
+      "regular_price": 15,
+      "sale_price": 10,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Téléphones",
+        "iPhones"
+      ],
+      "url": "https://kuwej.com/product/chargeur-iphone-type-c-vers-type-c-20w/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 22621,
+      "name": "Chargeur Smart Watch  Magnétique 15W",
+      "price": 5,
+      "regular_price": 15,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Montres Connectées",
+        "Montres Connectées"
+      ],
+      "url": "https://kuwej.com/product/chargeur-smart-watch-magnetique-15w/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 13841,
+      "name": "Bracelet Câble USBiPhone",
+      "price": 15,
+      "regular_price": 15,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Téléphones",
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/copie-bracelet-cable-usb-iphone/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 16848,
+      "name": "Coque Airpods 3, KUWEJ en silicone Couleur blanche",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "kuwej Brand",
+        "Pochettes Airpods"
+      ],
+      "url": "https://kuwej.com/product/coque-airpods-3-kuwej-en-silicone-couleur-blanche/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 16829,
+      "name": "Coque Airpods 3, KUWEJ en silicone Couleur noire",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "kuwej Brand"
+      ],
+      "url": "https://kuwej.com/product/coque-airpods-3-kuwej-en-silicone-couleur-noire/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 16856,
+      "name": "Coque Airpods Pro 2, KUWEJ en silicone Couleur Blanche",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "kuwej Brand"
+      ],
+      "url": "https://kuwej.com/product/coque-airpods-pro-2-kuwej-en-silicone-couleur-blanche/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 16854,
+      "name": "Coque Airpods Pro 2, KUWEJ en silicone Couleur noire",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "kuwej Brand"
+      ],
+      "url": "https://kuwej.com/product/coque-airpods-pro-2-kuwej-en-silicone-couleur-noire/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 16852,
+      "name": "Coque Airpods Pro, KUWEJ en silicone Couleur Blanche",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "kuwej Brand"
+      ],
+      "url": "https://kuwej.com/product/coque-airpods-pro-kuwej-en-silicone-couleur-blanche/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 16849,
+      "name": "Coque Airpods Pro, KUWEJ en silicone Couleur noire",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "kuwej Brand"
+      ],
+      "url": "https://kuwej.com/product/coque-airpods-pro-kuwej-en-silicone-couleur-noire/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13810,
+      "name": "Corde à sauter",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Gadgets & Accessoires"
+      ],
+      "url": "https://kuwej.com/product/corde-a-sauter/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24472,
+      "name": "Écouteurs Traduction IA en Temps Réel Haino Teko OWS-H6",
+      "price": 100,
+      "regular_price": 100,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/ecouteurs-traduction-ia-en-temps-reel-haino-teko-ows-h6/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24528,
+      "name": "Écouteurs sans fil traduction IA HOCO EQ27 ANC ENC Bluetooth 5.4 – Écouteurs intelligents avec réduction de bruit",
+      "price": 100,
+      "regular_price": 100,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/ecouteurs-traduction-ia-hoco-eq27-bluetooth-anc-enc/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 18198,
+      "name": "HK 10 Pro Max Plus Gold - Smart watch Series 10 WiFi",
+      "price": 110,
+      "regular_price": 110,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/hk-10-pro-max-plus-gold-smart-watch-series-10-wifi/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 18192,
+      "name": "HK 10 Pro Max Plus Noire - Smart watch Series 10 WiFi",
+      "price": 110,
+      "regular_price": 110,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/hk-10-pro-max-plus-noire-smart-watch-series-10-wifi/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14922,
+      "name": "iPhone 11 128 Go purple",
+      "price": 780,
+      "regular_price": 780,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "iPhones",
+        "Téléphones"
+      ],
+      "url": "https://kuwej.com/product/iphone-11-128-go-noir-2/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14925,
+      "name": "iPhone 12",
+      "price": 800,
+      "regular_price": 800,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "iPhones",
+        "Téléphones"
+      ],
+      "url": "https://kuwej.com/product/iphone-12/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 18116,
+      "name": "JBL JR 310BT Rose",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/jbl-jr-310bt-rose/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 18124,
+      "name": "JBL JR 310BT Violet",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/jbl-jr-310bt-violet/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 17729,
+      "name": "JBL Tune 510BT banc",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Casque Bluetooth Tendance",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/jbl-tune-510bt-banc/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 17736,
+      "name": "JBL Tune 510BT Bleu",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/jbl-tune-510bt-bleu/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 17720,
+      "name": "JBL Tune 510BT Noir",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/jbl-tune-510bt-noir/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 23677,
+      "name": "Lisseur cheveux portable rechargeable HOCO HP46 – Cheveux lisses partout, sans fil",
+      "price": 100,
+      "regular_price": 100,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Gadgets & Accessoires"
+      ],
+      "url": "https://kuwej.com/product/lisseur-cheveux-portable-rechargeable-hoco-hp46-cheveux-lisses-partout-sans-fil/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13796,
+      "name": "Lumière selfie",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Lumières Selfies"
+      ],
+      "url": "https://kuwej.com/product/lumiere-selfie/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 21569,
+      "name": "Lunettes connectées XG88 Pro – Audio Bluetooth, Traduction IA & Protection UV",
+      "price": 100,
+      "regular_price": 100,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "lunettes intelligentes",
+        "Téléphones"
+      ],
+      "url": "https://kuwej.com/product/lunettes-connectees-xg88-pro-audio-bluetooth-traduction-ia-protection-uv/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24921,
+      "name": "Mini Projecteur Portable WiFi Bluetooth 1080P | Support 270° Rotatif | Cinéma Maison & Plein Air",
+      "price": 129,
+      "regular_price": 129,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Gadgets & Accessoires"
+      ],
+      "url": "https://kuwej.com/product/mini-projecteur-portable-wimius-s27-kinshasa/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 27038,
+      "name": "Oraimo AirBuds 4 ENC True Wireless Earbuds",
+      "price": 25,
+      "regular_price": 50,
+      "sale_price": 25,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-airbuds-4-enc-true-wireless-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27106,
+      "name": "Oraimo Boom 30W Wireless Speaker",
+      "price": 95,
+      "regular_price": 190,
+      "sale_price": 95,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-boom-30w-wireless-speaker/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26978,
+      "name": "Oraimo BoomPop Air Lightweight On-Ear Wireless Headphones",
+      "price": 26,
+      "regular_price": 52,
+      "sale_price": 26,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-boompop-air-lightweight-on-ear-wireless-headphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27014,
+      "name": "Oraimo BoomPop Lite BoomPop Lite ENC Headphones",
+      "price": 33,
+      "regular_price": 66,
+      "sale_price": 33,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-boompop-lite-boompop-lite-enc-headphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26982,
+      "name": "Oraimo BoomPop N BoomPop N Wireless Headphones",
+      "price": 39,
+      "regular_price": 78,
+      "sale_price": 39,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-boompop-n-boompop-n-wireless-headphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26986,
+      "name": "Oraimo BoomPop Pro BoomPop Pro ANC Headphones",
+      "price": 65,
+      "regular_price": 130,
+      "sale_price": 65,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-boompop-pro-boompop-pro-anc-headphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27326,
+      "name": "Oraimo Braid 3A 45W Fast Charging Type-C to Lightning with 1M",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-braid-3a-45w-fast-charging-type-c-to-lightning-with-1m/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27322,
+      "name": "Oraimo Braid 3A 60W Fast Charging Type-C to Type-C Cable 1M",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-braid-3a-60w-fast-charging-type-c-to-type-c-cable-1m/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27330,
+      "name": "Oraimo Braid cable 2.4A Fast Charging 1M",
+      "price": 4,
+      "regular_price": 8,
+      "sale_price": 4,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-braid-cable-2-4a-fast-charging-1m/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27324,
+      "name": "Oraimo Braid USB-A to Type-C 2.4A Fast Charging",
+      "price": 4,
+      "regular_price": 8,
+      "sale_price": 4,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-braid-usb-a-to-type-c-2-4a-fast-charging/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27315,
+      "name": "Oraimo BraidLine 100W Type-C Cable",
+      "price": 8,
+      "regular_price": 16,
+      "sale_price": 8,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-braidline-100w-type-c-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27357,
+      "name": "Oraimo Candy Lightning 1m 2.1A Cable",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-candy-lightning-1m-2-1a-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27070,
+      "name": "Oraimo CONCH 2 Neo CONCH 2 Neo Wired Earphones",
+      "price": 4,
+      "regular_price": 8,
+      "sale_price": 4,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-conch-2-neo-conch-2-neo-wired-earphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27066,
+      "name": "Oraimo CONCH 2C CONCH 2C Type-C Wired Earphones",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-conch-2c-conch-2c-type-c-wired-earphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27349,
+      "name": "Oraimo DigiLine 100W Type-C to Type-C Data Cable",
+      "price": 8,
+      "regular_price": 16,
+      "sale_price": 8,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-digiline-100w-type-c-to-type-c-data-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27328,
+      "name": "Oraimo Duraline 4 3A 1.2M 3 in 1 Cable",
+      "price": 6,
+      "regular_price": 12,
+      "sale_price": 6,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-duraline-4-3a-1-2m-3-in-1-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27058,
+      "name": "Oraimo FreePods Neo FreePods Neo Half-In-Ear Earbuds",
+      "price": 25,
+      "regular_price": 50,
+      "sale_price": 25,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-freepods-neo-freepods-neo-half-in-ear-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27290,
+      "name": "Oraimo HyperGaN 65 65W GaN Wall Charger Kit with 100W CC Cable",
+      "price": 39,
+      "regular_price": 78,
+      "sale_price": 39,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-hypergan-65-65w-gan-wall-charger-kit-with-100w-cc-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27320,
+      "name": "Oraimo MagCable 1M 20W Type-C to Lightning Data Cable",
+      "price": 9,
+      "regular_price": 18,
+      "sale_price": 9,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-magcable-1m-20w-type-c-to-lightning-data-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27337,
+      "name": "Oraimo MagCable 1M 60W Type-C to Type-C Data Cable",
+      "price": 9,
+      "regular_price": 18,
+      "sale_price": 9,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-magcable-1m-60w-type-c-to-type-c-data-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26780,
+      "name": "Oraimo MagPower 15 10000mAh Wireless Power Bank",
+      "price": 54,
+      "regular_price": 65,
+      "sale_price": 54,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-magpower-15-10000mah-wireless-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27030,
+      "name": "Oraimo Necklace 5 Necklace 5 ANC Neckband Earphones",
+      "price": 31,
+      "regular_price": 62,
+      "sale_price": 31,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-necklace-5-necklace-5-anc-neckband-earphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27034,
+      "name": "Oraimo Necklace Lite Call Vibration Wireless Headphones",
+      "price": 19,
+      "regular_price": 38,
+      "sale_price": 19,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-necklace-lite-call-vibration-wireless-headphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27074,
+      "name": "Oraimo Necklace Neo Necklace Neo Wireless Neckband",
+      "price": 14,
+      "regular_price": 28,
+      "sale_price": 14,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-necklace-neo-necklace-neo-wireless-neckband/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27002,
+      "name": "Oraimo OpenArc Open-Ear Wireless Earphones",
+      "price": 59,
+      "regular_price": 118,
+      "sale_price": 59,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-openarc-open-ear-wireless-earphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27054,
+      "name": "Oraimo OpenCirclet 2 OpenCirclet 2 Open-Ear Headphones",
+      "price": 49,
+      "regular_price": 98,
+      "sale_price": 49,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-opencirclet-2-opencirclet-2-open-ear-headphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27078,
+      "name": "Oraimo OpenLoop Open-Ear Wireless Headphones",
+      "price": 44,
+      "regular_price": 88,
+      "sale_price": 44,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-openloop-open-ear-wireless-headphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27094,
+      "name": "Oraimo OpenSnap Air Open-Ear True Wireless Earbuds",
+      "price": 33,
+      "regular_price": 66,
+      "sale_price": 33,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-opensnap-air-open-ear-true-wireless-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26990,
+      "name": "Oraimo OpenSnap N OpenSnap N Open-Ear Earbuds",
+      "price": 28,
+      "regular_price": 56,
+      "sale_price": 28,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-opensnap-n-opensnap-n-open-ear-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26970,
+      "name": "Oraimo OpenSnap N2 Quick Charging Deep Bass Open-Ear True Wireless Earbuds",
+      "price": 29,
+      "regular_price": 58,
+      "sale_price": 29,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-opensnap-n2-quick-charging-deep-bass-open-ear-true-wireless-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26966,
+      "name": "Oraimo OpenSnap Open-Ear Earbuds",
+      "price": 29,
+      "regular_price": 58,
+      "sale_price": 29,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Casques Bluetooth",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-opensnap-open-ear-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26794,
+      "name": "Oraimo PowerBox 300 Lite 30000mAh Power Bank",
+      "price": 42,
+      "regular_price": 50,
+      "sale_price": 42,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powerbox-300-lite-30000mah-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26798,
+      "name": "Oraimo PowerBox 400 Vision 40000mAh 22.5W Power Bank",
+      "price": 60,
+      "regular_price": 72,
+      "sale_price": 60,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powerbox-400-vision-40000mah-22-5w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26802,
+      "name": "Oraimo PowerBox 500 50000mAh 22.5W Power Bank",
+      "price": 84,
+      "regular_price": 101,
+      "sale_price": 84,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powerbox-500-50000mah-22-5w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26806,
+      "name": "Oraimo PowerBox 600 60000mAh Power Bank",
+      "price": 99,
+      "regular_price": 140,
+      "sale_price": 99,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powerbox-600-60000mah-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27295,
+      "name": "Oraimo PowerCube 20 Chic 20W GaN Wall Charger Kit with Type-C to Lightning Cable",
+      "price": 19,
+      "regular_price": 38,
+      "sale_price": 19,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powercube-20-chic-20w-gan-wall-charger-kit-with-type-c-to-lightning-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27300,
+      "name": "Oraimo PowerCube 20 Chic 20W GaN Wall Charger Kit with Type-C to Type-C Cable",
+      "price": 19,
+      "regular_price": 38,
+      "sale_price": 19,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powercube-20-chic-20w-gan-wall-charger-kit-with-type-c-to-type-c-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27268,
+      "name": "Oraimo PowerCube 201 UK Type Plug 20W Charger Kit",
+      "price": 16,
+      "regular_price": 32,
+      "sale_price": 16,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powercube-201-uk-type-plug-20w-charger-kit/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27278,
+      "name": "Oraimo PowerCube 202 UK Type 20W Compatible Charger Kit",
+      "price": 12,
+      "regular_price": 24,
+      "sale_price": 12,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powercube-202-uk-type-20w-compatible-charger-kit/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26774,
+      "name": "Oraimo PowerFlow B11 10000mAh 15W Power Bank",
+      "price": 20,
+      "regular_price": 25,
+      "sale_price": 20,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powerflow-b11-10000mah-15w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27264,
+      "name": "Oraimo PowerGaN 251 25W GaN Fast Mini Charger Set",
+      "price": 16,
+      "regular_price": 32,
+      "sale_price": 16,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powergan-251-25w-gan-fast-mini-charger-set/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27273,
+      "name": "Oraimo PowerGaN 351 35W GaN Ultra Fast Charger Kit",
+      "price": 16,
+      "regular_price": 32,
+      "sale_price": 16,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powergan-351-35w-gan-ultra-fast-charger-kit/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27305,
+      "name": "Oraimo PowerGaN 36 Pro 36W Wall Charger Kit",
+      "price": 25,
+      "regular_price": 50,
+      "sale_price": 25,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powergan-36-pro-36w-wall-charger-kit/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27259,
+      "name": "Oraimo PowerGaN 451 45W Gan Ultra Fast Wall Charger",
+      "price": 22,
+      "regular_price": 44,
+      "sale_price": 22,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powergan-451-45w-gan-ultra-fast-wall-charger/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26792,
+      "name": "Oraimo PowerJet 130 27600mAh Power Bank",
+      "price": 134,
+      "regular_price": 161,
+      "sale_price": 134,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powerjet-130-27600mah-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26804,
+      "name": "Oraimo PowerJet 501 50000mAh Power Bank",
+      "price": 69,
+      "regular_price": 100,
+      "sale_price": 69,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powerjet-501-50000mah-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27280,
+      "name": "Oraimo PowerMate 101 10W Portable & Efficient Charger",
+      "price": 8,
+      "regular_price": 16,
+      "sale_price": 8,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powermate-101-10w-portable-efficient-charger/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26778,
+      "name": "Oraimo PowerNova L11 10000mAh 22.5W Power Bank",
+      "price": 34,
+      "regular_price": 41,
+      "sale_price": 34,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powernova-l11-10000mah-22-5w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26788,
+      "name": "Oraimo PowerNova L21 20000mAh 30W Power Bank",
+      "price": 46,
+      "regular_price": 55,
+      "sale_price": 46,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powernova-l21-20000mah-30w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26786,
+      "name": "Oraimo PowerNova Q21 20000mAh 22.5W Power Bank",
+      "price": 30,
+      "regular_price": 35,
+      "sale_price": 30,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powernova-q21-20000mah-22-5w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26796,
+      "name": "Oraimo PowerNova Q31 30000mAh 22.5W Fast Charging Power Bank",
+      "price": 52,
+      "regular_price": 62,
+      "sale_price": 52,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powernova-q31-30000mah-22-5w-fast-charging-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26800,
+      "name": "Oraimo PowerNova Q41 40000mAh Power Bank – 22.5W Fast Charging",
+      "price": 64,
+      "regular_price": 77,
+      "sale_price": 64,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powernova-q41-40000mah-power-bank-22-5w-fast-charging/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26790,
+      "name": "Oraimo PowerNova QF1 27000mAh 22.5W Power Bank",
+      "price": 44,
+      "regular_price": 53,
+      "sale_price": 44,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-powernova-qf1-27000mah-22-5w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27285,
+      "name": "Oraimo PowerOmni 251 2500W Multi-Plug Travel Converter",
+      "price": 19,
+      "regular_price": 38,
+      "sale_price": 19,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Chargeurs Oraimo",
+        "Chargeurs Téléphones"
+      ],
+      "url": "https://kuwej.com/product/oraimo-poweromni-251-2500w-multi-plug-travel-converter/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27310,
+      "name": "Oraimo RobustLine 100W High‑Speed Durable Type-c to Type-c Data Cable",
+      "price": 5,
+      "regular_price": 10,
+      "sale_price": 5,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-robustline-100w-high-speed-durable-type-c-to-type-c-data-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27341,
+      "name": "Oraimo RobustLine 2.4A Data Cable",
+      "price": 6,
+      "regular_price": 12,
+      "sale_price": 6,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-robustline-2-4a-data-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27334,
+      "name": "Oraimo RobustLine 2A 1M Lightning Cable",
+      "price": 4,
+      "regular_price": 8,
+      "sale_price": 4,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-robustline-2a-1m-lightning-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27332,
+      "name": "Oraimo RobustLine 2A 1M Micro-USB Cable",
+      "price": 3,
+      "regular_price": 6,
+      "sale_price": 3,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-robustline-2a-1m-micro-usb-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27339,
+      "name": "Oraimo RobustLine 2A 1M Type-C Cable",
+      "price": 3,
+      "regular_price": 6,
+      "sale_price": 3,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-robustline-2a-1m-type-c-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27317,
+      "name": "Oraimo RobustLine 60W Type-C to Type-C Cable",
+      "price": 6,
+      "regular_price": 12,
+      "sale_price": 6,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-robustline-60w-type-c-to-type-c-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27042,
+      "name": "Oraimo SpaceBox 8W FM Wireless Speaker",
+      "price": 31,
+      "regular_price": 62,
+      "sale_price": 31,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebox-8w-fm-wireless-speaker/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27018,
+      "name": "Oraimo SpaceBox Active SpaceBox Active 25W Speaker",
+      "price": 55,
+      "regular_price": 110,
+      "sale_price": 55,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebox-active-spacebox-active-25w-speaker/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27050,
+      "name": "Oraimo SpaceBox Max 200W Auracast SpaceBox Max",
+      "price": 290,
+      "regular_price": 580,
+      "sale_price": 290,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebox-max-200w-auracast-spacebox-max/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27062,
+      "name": "Oraimo SpaceBox Pro 80W Karaoke-Support Wireless Speaker",
+      "price": 119,
+      "regular_price": 238,
+      "sale_price": 119,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebox-pro-80w-karaoke-support-wireless-speaker/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26961,
+      "name": "Oraimo SpaceBuds 2 52dB Hybrid ANC and AI Translation Wireless Earbuds",
+      "price": 52,
+      "regular_price": 104,
+      "sale_price": 52,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-2-52db-hybrid-anc-and-ai-translation-wireless-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27090,
+      "name": "Oraimo SpaceBuds Air 2 50H Long Battery Life Earbuds with Smart Translation",
+      "price": 22,
+      "regular_price": 44,
+      "sale_price": 22,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-air-2-50h-long-battery-life-earbuds-with-smart-translation/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26994,
+      "name": "Oraimo SpaceBuds Air+ SpaceBuds Air+ Earbuds",
+      "price": 27,
+      "regular_price": 54,
+      "sale_price": 27,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-air-spacebuds-air-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27026,
+      "name": "Oraimo SpaceBuds Air SpaceBuds Air Earbuds",
+      "price": 18,
+      "regular_price": 36,
+      "sale_price": 18,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-air-spacebuds-air-earbuds-2/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27086,
+      "name": "Oraimo SpaceBuds HAYATO Wireless Gaming Earbuds – Low Latency Audio",
+      "price": 24,
+      "regular_price": 48,
+      "sale_price": 24,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-hayato-wireless-gaming-earbuds-low-latency-audio/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27082,
+      "name": "Oraimo SpaceBuds Lite 2 Immersive Portable True Wireless Earbuds",
+      "price": 22,
+      "regular_price": 44,
+      "sale_price": 22,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-lite-2-immersive-portable-true-wireless-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26998,
+      "name": "Oraimo SpaceBuds Lite SpaceBuds Lite Earbuds",
+      "price": 16,
+      "regular_price": 32,
+      "sale_price": 16,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-lite-spacebuds-lite-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27006,
+      "name": "Oraimo SpaceBuds N SpaceBuds N ANC Wireless Earbuds",
+      "price": 27,
+      "regular_price": 54,
+      "sale_price": 27,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-n-spacebuds-n-anc-wireless-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27010,
+      "name": "Oraimo SpaceBuds Neo+ SpaceBuds Neo+ ANC True Wireless Earphones",
+      "price": 24,
+      "regular_price": 48,
+      "sale_price": 24,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-neo-spacebuds-neo-anc-true-wireless-earphones/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27022,
+      "name": "Oraimo SpaceBuds Neo SpaceBuds Neo Spatial Audio Earbuds",
+      "price": 19,
+      "regular_price": 38,
+      "sale_price": 19,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-neo-spacebuds-neo-spatial-audio-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27046,
+      "name": "Oraimo SpaceBuds Pro SpaceBuds Pro 50dB ANC Earbuds",
+      "price": 119,
+      "regular_price": 238,
+      "sale_price": 119,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-pro-spacebuds-pro-50db-anc-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27102,
+      "name": "Oraimo SpaceBuds Z SpaceBuds Z ANC Wireless Earbuds",
+      "price": 38,
+      "regular_price": 76,
+      "sale_price": 38,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-spacebuds-z-spacebuds-z-anc-wireless-earbuds/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27354,
+      "name": "Oraimo SpeedLine 4 Magnetic 2-IN-1 60W Fast Charge Cable",
+      "price": 9,
+      "regular_price": 18,
+      "sale_price": 9,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-speedline-4-magnetic-2-in-1-60w-fast-charge-cable/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 27344,
+      "name": "Oraimo Stream Type-C to 3.5mm Audio Adapter",
+      "price": 6,
+      "regular_price": 12,
+      "sale_price": 6,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Câbles & Adaptateurs Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-stream-type-c-to-3-5mm-audio-adapter/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26776,
+      "name": "Oraimo Toast 22.5 Byte 10000mAh 22.5W Power Bank",
+      "price": 26,
+      "regular_price": 31,
+      "sale_price": 26,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-toast-22-5-byte-10000mah-22-5w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26782,
+      "name": "Oraimo Traveler 12 Byte 20000mAh 12W Power Bank",
+      "price": 34,
+      "regular_price": 41,
+      "sale_price": 34,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-traveler-12-byte-20000mah-12w-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26784,
+      "name": "Oraimo Traveler 15 20000mAh Power Bank",
+      "price": 26,
+      "regular_price": 31,
+      "sale_price": 26,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Power bank oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-traveler-15-20000mah-power-bank/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 26974,
+      "name": "Oraimo VoxMic Wireless Microphone",
+      "price": 59,
+      "regular_price": 118,
+      "sale_price": 59,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Accessoires Oraimo",
+        "Écouteurs & Audio Oraimo"
+      ],
+      "url": "https://kuwej.com/product/oraimo-voxmic-wireless-microphone/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 15540,
+      "name": "Pochette Airpods Max  Ultra-fine Noir",
+      "price": 14.99,
+      "regular_price": 14.99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/pochette-airpods-max-multicouche-fermeture-magnetique-soft-touch-ultra-fine-noir/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 16666,
+      "name": "Prise Connectée WiFi Intelligente Compatible Amazon Alexa et Google",
+      "price": 24.95,
+      "regular_price": 24.95,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Gadgets & Accessoires"
+      ],
+      "url": "https://kuwej.com/product/prise-connectee-wifi-intelligente-compatible-amazon-alexa-et-google/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 16634,
+      "name": "2 Prise Connectée WiFi Intelligente - Compatible Amazon Alexa et Google Home",
+      "price": 29.99,
+      "regular_price": 29.99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Gadgets & Accessoires"
+      ],
+      "url": "https://kuwej.com/product/prise-connectee-wifi-intelligente-compatible-android-ios-amazon-alexa-et-google-home-programmable-et-controlable-a-distance/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13839,
+      "name": "Bracelet Câble USB Android",
+      "price": 15,
+      "regular_price": 15,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Chargeurs Téléphones",
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/produit-2-2/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 15012,
+      "name": "Semi AirPods Max",
+      "price": 470,
+      "regular_price": 470,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Airprods Authentique",
+        "Casques Bluetooth"
+      ],
+      "url": "https://kuwej.com/product/semi-airpods-max/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 17986,
+      "name": "Semi Apple watch Séries 9 rose - gold 45mm",
+      "price": 60,
+      "regular_price": 60,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "iPhones"
+      ],
+      "url": "https://kuwej.com/product/semi-apple-watch-serie-8-45mm-rose-2-2-2-2/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14999,
+      "name": "Semi Apple watch Séries 9 grise 45mm",
+      "price": 60,
+      "regular_price": 60,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "iPhones"
+      ],
+      "url": "https://kuwej.com/product/semi-apple-watch-serie-8-45mm-rose-2-2-2-2-2/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 18086,
+      "name": "Semi Apple watch Serie 9 - 45mm Noire",
+      "price": 49,
+      "regular_price": 60,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "iPhones"
+      ],
+      "url": "https://kuwej.com/product/semi-apple-watch-serie-9-45mm-noire-2/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 15517,
+      "name": "Semi Apple Watch Ultra 2",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Uncategorized"
+      ],
+      "url": "https://kuwej.com/product/semi-apple-watch-ultra-2/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 15527,
+      "name": "Semi Apple Watch Ultra Couleur GOLD",
+      "price": 55,
+      "regular_price": 55,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "iPhones"
+      ],
+      "url": "https://kuwej.com/product/semi-apple-watch-ultra-couleur-gold/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 25633,
+      "name": "Smart Watch Série 10 avec Écouteurs et 3 Bracelets KW75 Max",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-kw75-max-ecouteurs-3-bracelets/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 16030,
+      "name": "Smart Watch S8 Ultra 4G, 16Go et 1Go WiFi, carte d'oreille, GPS",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Sim"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-s8-ultra-g4-pour-hommes-et-femmes-s8-ultra-smartwatch-serie-8-4g-16go-wifi-carte-doreille-gps/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 25698,
+      "name": "Smart Watch Série 10 avec 3 Bracelets KW75 Max",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-3-bracelets-kw75-max/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 26651,
+      "name": "Smart Watch Série 10 avec 3 Bracelets - Noire - KW90 MAX",
+      "price": 19,
+      "regular_price": 89,
+      "sale_price": 19,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-3-bracelets-noire-kw90-max/",
+      "stock_status": "instock"
+    },
+    {
+      "id": 24963,
+      "name": "Smart Watch Série 10 avec 5 Bracelets et Écouteurs  Silver",
+      "price": 80,
+      "regular_price": 80,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-5-bracelets-et-ecouteurs-silver/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24440,
+      "name": "Smart Watch Série 10 avec 5 Bracelets et Écouteurs  X26 Wisme",
+      "price": 80,
+      "regular_price": 80,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-5-bracelets-et-ecouteurs-x26-wisme/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 18822,
+      "name": "Smart watch Série 10 avec AirProds et 2 bracelets",
+      "price": 55,
+      "regular_price": 55,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-airprods-et-2-bracelets/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 22442,
+      "name": "Smart Watch Série 10 Avec AirProds et 7 Bracelets S40 Pro max",
+      "price": 55,
+      "regular_price": 55,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-airprods-et-7-bracelets-s40-pro-max/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 22665,
+      "name": "Smart watch Série 10 avec Écouteur et 2 bracelets",
+      "price": 55,
+      "regular_price": 55,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-ecouteur-et-2-bracelets/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24040,
+      "name": "Smart Watch Série 10 avec Écouteur et 5 Bracelets",
+      "price": 80,
+      "regular_price": 80,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-ecouteur-et-5-bracelets/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 24158,
+      "name": "Smart Watch Série 10 avec Écouteurs Sans Fil et 7 Bracelets  E100 Plus",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-avec-ecouteurs-sans-fil-et-7-bracelets-e100-plus/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 18690,
+      "name": "Smart Watch Série 10 - TX11 PRO PLUS",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-10-tx11-pro-plus/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 26360,
+      "name": "Smart Watch Série 11 avec 3 Bracelets – KW90 MAX",
+      "price": 99,
+      "regular_price": 99,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-serie-11-avec-3-bracelets-kw90-max/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14770,
+      "name": "Smart Watch T500 Noire",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-t500-noire/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14771,
+      "name": "Smart Watch T500 Noire Blanche",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-t500-noire-blanche/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14314,
+      "name": "Smart Watch T800 Ultra Noire",
+      "price": 29,
+      "regular_price": 29,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watches Ultra"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-t800-ultra-noire/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14758,
+      "name": "Smart Watch T800 Ultra Orange",
+      "price": 30,
+      "regular_price": 30,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watches Ultra"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-t800-ultra-orange/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 16060,
+      "name": "Smart Watch T900 Pro Max GL série 9",
+      "price": 49.95,
+      "regular_price": 49.95,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-t900-gl-serie-9/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 25193,
+      "name": "Smart watch Ultra 2 avec écouteurs et 2 bracelets TK79 Max",
+      "price": 100,
+      "regular_price": 100,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watches Ultra"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-ultra-2-avec-ecouteurs-et-2-bracelets-tk79-max/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14759,
+      "name": "Smart Watch X8 Ultra Orange",
+      "price": 100,
+      "regular_price": 100,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watches Ultra"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-x8-ultra-orange/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 14764,
+      "name": "Smart Watch X8 Ultra Orange Noire",
+      "price": 100,
+      "regular_price": 100,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watches Ultra"
+      ],
+      "url": "https://kuwej.com/product/smart-watch-x8-ultra-orange-noire/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 25187,
+      "name": "Smartwatch Serie 10 avec 5 bracelets - Wisme WS10-3 Max",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smartwatch-serie-10-avec-5-bracelets-wisme-ws10-3-max/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 25671,
+      "name": "Smartwatch Serie 10 avec 5 bracelets  WS10-3",
+      "price": 50,
+      "regular_price": 50,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Montres Connectées",
+        "Smart Watch Serie"
+      ],
+      "url": "https://kuwej.com/product/smartwatch-serie-10-avec-5-bracelets-ws10-3/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13827,
+      "name": "Support mural téléphone et télécommande",
+      "price": 10,
+      "regular_price": 10,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Gadgets & Accessoires"
+      ],
+      "url": "https://kuwej.com/product/support-mural-telephone-et-telecommande/",
+      "stock_status": "outofstock"
+    },
+    {
+      "id": 13819,
+      "name": "Support Téléphone",
+      "price": 15,
+      "regular_price": 15,
+      "sale_price": null,
+      "currency": "USD",
+      "currency_symbol": "$",
+      "categories": [
+        "Gadgets & Accessoires"
+      ],
+      "url": "https://kuwej.com/product/support-telephone/",
+      "stock_status": "outofstock"
+    }
+  ]
+}

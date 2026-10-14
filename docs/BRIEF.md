@@ -1,6 +1,6 @@
 # Kuwej — Reel Instagram 30 s · Direction artistique & production
 
-Format: 1080 × 1920 · 9:16 · 30 fps · 900 frames · MP4 H.264 (yuv420p) · French only.
+Format : 1080 × 1920 · 9:16 · 30 fps · 900 frames · MP4 H.264 (yuv420p, BT.709) · 100 % français.
 
 ---
 
@@ -8,128 +8,131 @@ Format: 1080 × 1920 · 9:16 · 30 fps · 900 frames · MP4 H.264 (yuv420p) · F
 
 | Found | Where | Used for |
 |---|---|---|
-| Repository | `README.md` only (no project skill, script or config at start) | — |
-| `session-start-hook` | `~/.claude/skills` | Not needed |
-| `frontend-design`, `brand-guidelines`, `canvas-design`, `theme-factory`, `web-artifacts-builder`, `slack-gif-creator`, `algorithmic-art`… | `/mnt/skills/{public,examples}` | Read for reference only; the brand rules come from this brief (no theme or palette from a skill) |
-| `docx`, `pdf`, `pptx`, `xlsx`, `docs`, `google-workspace`, `deep-research`, `morning`, `import-memory`, `skill-creator`, browser / computer-use skills | synced skills | Not relevant (no Office output, no desktop browser attached) |
-| Chromium headless (`/opt/pw-browsers`) + `playwright-core` | environment | `scripts/capture-kuwej.mjs`: mobile screenshots 390 × 844 @3x, logo download + colour check, data extraction |
-| ffmpeg / ffprobe | environment | `scripts/analyze-reference.sh`: frame extraction, cut detection, contact sheets |
-| Node 22 + Remotion 4 | npm | Video composition and H.264 render |
-| TTS key (Gemini / Google Cloud / ElevenLabs) | **not present** | `scripts/tts-gemini.mjs` ready; runs as soon as `GEMINI_API_KEY` is set |
+| Client export (screens, categories, products, logo, catalogue, WhatsApp) | `main` → moved to `assets/` | **Only data source of the video** (`assets/video-content.json`) |
+| HeyGen HyperFrames skills (21 skills, e.g. `embedded-captions`) | branch `claude/heygen-hyperframes-skill-uj25cm` (not on `main`) | Not used: the project is built in Remotion as requested |
+| `frontend-design`, `brand-guidelines`, `canvas-design`, `theme-factory`… | `/mnt/skills` | Reference only; palette and rules come from this brief |
+| Office / docs / browser skills | synced skills | Not relevant |
+| Chromium headless + `playwright-core` | environment | `scripts/capture-kuwej.mjs` (re-capture when kuwej.com is reachable) |
+| ffmpeg / ffprobe | environment | Reference analysis (frames every 0.5 s, cut detection) + output checks |
+| Remotion 4 + Node 22 | npm | Composition and H.264 render |
+| TTS key (Gemini / Google / ElevenLabs / Fish Audio) | **missing** | `scripts/tts-gemini.mjs` ready; the video is rendered without voice for now |
 
-## 2. Blocked or missing (as of the session)
+Network: `kuwej.com`, `whatships.com` and `api.fish.audio` are blocked by this environment's policy. The site content comes from the client export, and the reference video was uploaded directly.
 
-| Item | Status | What unblocks it |
-|---|---|---|
-| `kuwej.com` | **Denied by the environment's network policy** (proxy 403). WebFetch: DNS failure. Not indexed by web search. | Add `kuwej.com` to the environment's *Allowed domains* (Network access), or run `npm run capture` on any machine with internet access. |
-| `whatships.com/videos/havyn/` | **Denied by the same policy** | Add `whatships.com` (and its video CDN) to Allowed domains, or drop the `.mp4` into `reference/` and run `npm run reference`. |
-| Real categories, products, prices, WhatsApp number, logo, screenshots | Not collected — **nothing was invented**; `assets/video-content.json` is empty | `npm run capture` fills `/assets` automatically. |
-| Voice-over audio | No API key in the environment | `GEMINI_API_KEY=… npm run tts:gemini`, or paste `docs/VOICEOVER.md` into AI Studio / Chirp 3 HD / ElevenLabs. |
+## 2. kuwej.com data used
 
-Until `/assets` is filled, the video renders clearly marked dashed slots (« Capture manquante », « Logo manquant », « numéro manquant »). These are development markers, never imitations of the site.
+- **Logo:** `assets/logo/kuwej-logo.png`, the site's own file: dark grey "kuwej" wordmark plus a blue smiley speech-bubble icon, on a white background. It is displayed untouched as a rounded tile.
+- **WhatsApp:** **+243 97 5999 488** (official customer line, `assets/data/numero_whatsapp_officiel.txt`). The site's currency is USD, displayed as `19.00$`.
+- **Real offer:** « Livraison gratuite pour toute commande supérieure à 50.00$. » (site cart banner, `assets/screens/04_panier_mobile.png`).
+- **Categories:** the site has 36. The video shows the **7 top-level categories that actually sell products**. Excluded:
+  - Tendance & Mode, with its sub-category Maillots & Baskets: "Mode" is excluded by the brief, and it has 0 products anyway.
+  - Ordinateurs Portables: excluded by the brief, also 0 products.
+  - Produits Numeriques: 0 products.
 
-## 3. Reference video (whatships.com/videos/havyn/)
+| # | Category (exact) | Screen used | Products (name as displayed · price as displayed · regular price) |
+|---|---|---|---|
+| 1 | Casques Bluetooth | `12_Casques_Bluetooth` | Oraimo OpenLoop Open-Ear Wireless Headphones · **44.00$** · ~~88.00$~~ — Airpods Pro – Semi Apple Orginale · **25.00$** · ~~100.00$~~ |
+| 2 | Montres Connectées | `07_Smart_Watch_Serie` (06 is captured faded) | Smart Watch Série 10 Avec 3 Bracelets – Noire – KW90 MAX · **19.00$** · ~~89.00$~~ — Chargeur Smart Watch Magnétique 15W · **5.00$** · ~~15.00$~~ |
+| 3 | Téléphones | `16_Telephones` | Chargeur IPhone Type-C Vers Type-C 20W · **10.00$** · ~~15.00$~~ |
+| 4 | Accessoires Oraimo | `01_Accessoires_Oraimo` | Oraimo Boom 30W Wireless Speaker · **95.00$** · ~~190.00$~~ — Oraimo PowerBox 600 60000mAh Power Bank · **99.00$** · ~~140.00$~~ |
+| 5 | Gadgets & Accessoires | `21_Lumieres_Selfies` (20 is captured faded) | Lumière selfie · **10.00$** ⚠ *out of stock on the site; every product in this category is out of stock* |
+| 6 | Abonnement & streaming | `22_Abonnement_Streaming` | Abonnement Apple One – Kinshasa RDC · **13.00$ / mois** · ~~25.00$~~ |
+| 7 | kuwej Brand | `23_Kuwej_Brand` | Coque Airpods Pro 2, KUWEJ En Silicone Couleur Blanche · **5.00$** · ~~10.00$~~ — Coque Airpods 3, KUWEJ En Silicone Couleur Blanche · **5.00$** · ~~10.00$~~ |
 
-**Not watched.** The page and video could not be reached, so no analysis is claimed here.
+Prices come from `assets/data/produits_et_prix.json` and are written in the site's display format, cross-checked on the category grids and the cart.
 
-To analyse it once access exists: `npm run reference` → `reference/frames/` (2 fps), `reference/cuts.txt` (cut timestamps), `reference/sheet_*.png` (contact sheets), `reference/info.txt` (duration, resolution, fps). From those I measure: shot durations, cut rhythm, transition types, text animation, phone mockup usage, camera moves, subtitle style, hook and CTA. Then I map them onto `src/timing.ts` (act boundaries) and the animation helpers in `src/components/anim.ts` and `Kinetic.tsx`. All the timing lives in those files.
+## 3. Reference video analysis (uploaded file: Madifood ad, 720 × 1280, 30 fps, 44.7 s)
 
-The current build uses the standard mechanics of high-performing app/e-commerce Reels, as an **unverified working hypothesis** to be replaced by the measured values:
-- hook under 1 s with text slam and a phone whipping in;
-- one persistent phone that moves between scenes (continuity instead of hard cuts);
-- horizontal push between categories, vertical push inside a category;
-- word-by-word kinetic type;
-- subtitle pill above the bottom safe zone;
-- static end card held for at least 1 s.
+Frames were extracted every 0.5 s and cuts detected at 4.07, 12.2, 14.7, 15.1, 26.9 and 30.5 s.
+
+| Ref. time | What happens | Mechanic kept | Our version |
+|---|---|---|---|
+| 0–2 s | « FAIM ? » / « BOUGE PAS. »; round food photos fly across with motion blur | Short question hook, word slam, flying circular product bubbles, highlight block | « ENVIE / D'ÉLÉGANCE ? » with real product photos in bubbles |
+| 2–4 s | Full-screen brand colour, logo icon, mask reveal | Logo moment at ~2 s | Logo tile pops (spring + blur) on #EDEDED (the background rule forbids a full-colour screen) |
+| 4–6 s | App icon + name + tagline; **two crossing diagonal ticker tapes** | Tapes, tagline | Blue tape « KUWEJ.COM • KINSHASA » and ink tape with the real category names |
+| 6–12 s | Map zoom, « CONAKRY COMMANDE. » | Location statement | « Ta boutique en ligne / ici même, à Kinshasa » |
+| 12–14 s | « COMMANDER N'A JAMAIS ÉTÉ AUSSI SIMPLE. » + rotating arc | Stacked kinetic statement, last word on a block, rotating arc | « TON SHOPPING, / EN UN SEUL / GESTE. » |
+| 14–24 s | 3D-tilted phone, tap ripples; a **UI card lifts out of the screen**; fast motion-blurred scroll; product shown full size with name + **price tag** | Phone tilt, tap ripple, lift-out card, product + price tag | Home page → the « Meilleures catégories » row lifts out → real menu; then each product photo lifts out of its page with a blue price tag |
+| 24–30 s | Checkout, payment icons, « PAYEZ COMME VOUS VOULEZ. » | Proof point on the cart | Real cart page; the site's free-delivery banner lifts out; « LIVRAISON GRATUITE / AU-DELÀ DE 50.00$ » |
+| 30–38 s | Map « LIVRE EN 45 MIN », multi-phone, « +50 000 » counter | — | Dropped: no verifiable data |
+| 38–45 s | End card: logo, two-line claim, CTA button with tap, Android/iOS chips, phone peeking from the bottom | Whole structure | Logo · « COMMANDE SUR / kuwej.com » · button « Commander sur WhatsApp » with tap · number chip · slogan · phone peeking |
+
+**Rhythm:** one beat every 1.5–2.5 s, never a static frame. Our 30 s keeps the same beat density (7 acts, plus 7 category beats of 2 s).
+
+**Text style:** heavy condensed italic uppercase; whip-in with motion blur; one key line on a block. The block is yellow in the reference; here it is #0746C0 with #EDEDED text.
+
+**Subtitles:** the reference has no subtitle pill; the kinetic titles carry the voice-over. Same here: every voice line has its on-screen title.
+
+**Not copied:** content, texts, images and colours.
 
 ## 4. Voice-over
 
-See `docs/VOICEOVER.md`: 72 words with timing, tone cues and style prompts for Gemini TTS, Chirp 3 HD and ElevenLabs. The same timings are in `src/script.ts` (they drive the subtitles).
+`docs/VOICEOVER.md`: 72 words with timing, tone cues and style prompts for Gemini, Chirp 3 HD, ElevenLabs and Fish Audio. Timings live in `src/script.ts`.
 
 ## 5. Storyboard
 
-Frames @30 fps. Every screenshot is a real kuwej.com mobile capture from `/assets/screens/`. Every name, price and number is read from `assets/video-content.json`.
-
-| # | Time | Visual & screenshot | Animation / camera | Transition out | On-screen text (FR) | Voice (FR) |
-|---|---|---|---|---|---|---|
-| 1 | 0,0 – 1,6 s | Phone with `home.png` | Title **slams** in (scale 1.7 → 1, blur → sharp); phone **whips up** from below with rotation −14° and 3D tilt → 0 (spring) | Titles blur up and out | « L'élégance… » (serif italic) / « dans ta poche ? » (blue, drawn underline) | Et si l'élégance… tenait enfin dans ta poche ? |
-| 2 | 1,6 – 3,0 s | Same phone, **Kuwej logo** pops above | Logo scale 0.72 → 1 spring; slow push-in on the phone (0.96 → 1.035) | Logo rises and fades (f84–90) | Logo | (end of line) |
-| 3 | 3,0 – 6,5 s | `home-full.png` in the phone | **Page scroll** top → bottom (ease-in-out) + soft zoom 1.035 → 1.07 | Screen **pushes left**, the menu comes in from the right | « Ta boutique en ligne » / « ici, à Kinshasa » | Voici Kuwej. Ta boutique en ligne, ici, à Kinshasa. |
-| 4 | 6,5 – 10,0 s | `menu.png` (real category menu) | Phone **glides left** with −3° and 3D yaw; real category names cascade in on the right (stagger 4 f) | List slides right, titles blur out | « Tout, en » / « quelques gestes » + category list (Ordinateurs & Mode excluded) | Tu ouvres… tu explores… et tout est là, en quelques gestes. |
-| 5…n | 10,0 – 24,0 s (14 s ÷ number of categories) | Per category: `cat-*.png` (if the segment is ≥ 3.7 s), then `prod-*.png` for 1–2 products | Phone **alternates left/right** (camera moves, ±3°, ±8° yaw); category page scrolls 25 %; product pages slide up; ink product cards with the **real name** + **blue price chip** slide in opposite the phone | **Horizontal push** to the next category; titles whip | « 01 / 0N » + **real category name**; card: **real product name** + **real price** | Des produits choisis avec soin… → …ce n'est pas Kuwej. |
-| n+1 | 24,0 – 26,4 s | Phone back to centre with `cart.png` | Glide to centre, cart slides in, light scroll, zoom 1 → 1.06; phone **drops** out of frame | Phone falls (ease-in) | « Commande sur » / « kuwej.com » (blue slam) | Commande dès maintenant sur kuwej.com… |
-| n+2 | 26,4 – 30,0 s | End card on #EDEDED | Logo, CTA, WhatsApp pill, slogan **fade up** staggered (10 f); underline draws under the slogan; **hold ≥ 1.3 s** | — | Logo · « Commande sur kuwej.com » · « WhatsApp » + **real number** · « plus mieux, c'est sûr ! » | ou écris-nous sur WhatsApp. Kuwej. Plus mieux, c'est sûr ! |
-
-Subtitles: shown from 3 s to 24 s. They are hidden in the hook and the CTA, where the same words are already on screen as titles.
+| # | Time (frames) | Visual / screenshot | Animation · transition | On-screen text (FR) | Voice (FR) |
+|---|---|---|---|---|---|
+| 1 | 0–2 s (0–60) | 6 bubbles with real product photos (first product of each category) | Bubbles fly in with velocity blur; title slam; whip-out + bubbles implode to centre | ENVIE / **D'ÉLÉGANCE ?** | Envie d'élégance ? Viens voir… |
+| 2 | 2–4.7 s (60–140) | Kuwej logo tile | Spring pop with rotation; crossing tapes slide in; whip up | Ta boutique en ligne / *ici même, à Kinshasa* | Voici Kuwej. Ta boutique en ligne, ici même, à Kinshasa. |
+| 3 | 4.7–7 s (140–210) | Statement + rotating blue arc; tapes continue | Lines whip in from the left, staggered 7 f; motion-blur exit | TON SHOPPING, / EN UN SEUL / **GESTE.** | Ton shopping, en un seul geste. |
+| 4 | 7–10 s (210–300) | `02_page_accueil` then `03_menu_categories_mobile` in a 3D phone | Phone rises from the bottom; tap ripple; « Meilleures catégories » card lifts out then back; push to menu; tap on « Casques Bluetooth » | SI CE N'EST PAS ÉLÉGANT… / **CE N'EST PAS KUWEJ.** | Parce qu'ici, si ce n'est pas élégant… ce n'est pas Kuwej. |
+| 5–11 | 10–24 s (300–720), 2 s each | Category page, then product pages | Phone glides left/right (±14° yaw, float); page whips up; tap; product photo lifts out to a card; blue price tag pops (−4°) with struck regular price; name fades up; whip exit | « 0N / 07 » + exact category name; product names + prices (section 2) | Des casques… des montres… des téléphones… les accessoires Oraimo… des gadgets… tes abonnements… et bien sûr, la marque Kuwej. |
+| 12 | 24–26.3 s (720–790) | `04_panier_mobile` | Phone to centre; tap on the banner; banner lifts out; phone drops | LIVRAISON GRATUITE / **AU-DELÀ DE 50.00$** | Et la livraison est gratuite au-delà de cinquante dollars. |
+| 13 | 26.3–30 s (790–900) | Logo, CTA, `02_page_accueil` phone peeking | Logo drops in; titles whip; button press + tap ripple; chip and slogan fade up; underline draws; hold ≥ 1.2 s | Logo · COMMANDE SUR / **kuwej.com** · « Commander sur WhatsApp » · **+243 97 5999 488** · *plus mieux, c'est sûr !* | Commande dès maintenant sur kuwej.com, ou sur WhatsApp. Kuwej. Plus mieux, c'est sûr ! |
 
 ## 6. Palette, type, animation rules
 
-**Palette (strict, no other colour):**
-
-| Role | Hex |
-|---|---|
-| Background, every scene | `#EDEDED` |
-| Accent: prices, keywords, kuwej.com, slogan, index numbers | `#0746C0` |
-| Text, phone body, product cards, subtitle pill | `#1A1A1A` |
-
-Text on ink or blue surfaces uses `#EDEDED`. Shadows are `#1A1A1A` at low opacity.
-
-**Typefaces** (bundled via @fontsource, no network needed at render time):
-- **Manrope** 600/700/800: titles, product names, prices, subtitles. Geometric, modern, very legible on mobile, letter-spacing −0.02 to −0.035 em.
-- **Instrument Serif Italic**: the elegance accents (« L'élégance… », « ici, à Kinshasa », slogan). It carries the « Si ce n'est pas élégant, ce n'est pas Kuwej » positioning.
-- `npm run capture` also records the site's own fonts (`siteFonts` in `kuwej-data.json`). If the brand uses a specific family, swap it in `src/theme.ts` and `src/fonts.ts`.
-
-**Animation rules:**
-- Springs, no linear moves. Text uses `pop` (damping 16, little overshoot). The phone and camera use `glide` (damping 22, smooth).
-- Entrances take 6–12 frames. Exits take 6–8 frames, upwards with blur.
-- Words stagger by 2–3 frames.
-- The phone is the anchor: one position per beat, never more than one big move at a time.
-- No hard cut without motion: push or whip only. No flashes, no shake, no added graphics beyond lines and pills in the palette.
-- Logo: proportional scaling only. No recolour, filter, crop or stretch.
-- Safe zone: all text sits between y = 250 and y = 1540. The phone body may graze the bottom band; text never does.
+- **Colours (no others):**
+  - background #EDEDED on every frame;
+  - #0746C0 for blocks, price tags, tapes, button, ripple and slogan;
+  - #1A1A1A for text, phone body and the second tape.
+  - Text on blue or ink is #EDEDED.
+  - Real screenshots and the logo keep their own pixels.
+- **Typefaces (bundled, offline):**
+  - **Barlow Condensed ExtraBold Italic** for kinetic titles and prices (the reference mechanic). Category names keep their exact case.
+  - **Manrope** 600–800 for product names, button and number.
+  - **Instrument Serif Italic** for elegance accents (« ici même, à Kinshasa ») and the slogan.
+- **Motion:**
+  - Springs only: `pop` for text, `glide` for the phone and cards.
+  - Every move has motion blur proportional to its speed.
+  - Entrances take 6–12 f, exits 7–10 f.
+  - Every beat changes before 2.5 s.
+  - The phone is the anchor: one position per beat, alternating left/right in the product section.
+  - Lift-outs always start from the real area of the screenshot.
+- **Logo:** proportional scaling only. Rounded corners clip only its white margin; no recolour, filter or distortion.
+- **Safe zone:** all text sits between y 250 and y 1540. Only the decorative bottom phone in the end card crosses into the bottom band.
 
 ## 7. Project
 
 ```
-assets/                 public dir (staticFile) — filled by npm run capture
-  video-content.json    the only data source for the video
-  kuwej-data.json       full extraction for review (all categories incl. excluded, contacts, fonts)
-  screens/  logo.*  audio/voiceover.wav
-src/
-  timing.ts             900 frames, act boundaries, safe zone
-  theme.ts  fonts.ts    palette, phone geometry, typefaces
-  script.ts             FR voice-over lines + subtitle timing
-  components/           Phone, Screen (scroll/zoom/push), Kinetic, Captions, Logo, SafeZones, anim
-  scenes/               Hook, Store, Categories, Cta
-scripts/
-  capture-kuwej.mjs     Playwright capture (390×844 @3x), Ordinateurs/Mode exclusion, logo colour check
-  analyze-reference.sh  reference frames + cuts
-  tts-gemini.mjs        voice-over generation
+assets/            client export (screens/, categories/, products/, logo/, data/) + video-content.json
+src/timing.ts      act boundaries (900 f)      src/script.ts    FR voice-over lines
+src/theme.ts       palette, fonts, phone       src/fonts.ts     bundled fonts
+src/components/    Headline, Tapes, Phone, Screen, Crop, TapRipple, Logo, Kinetic, SafeZones, geometry, anim
+src/scenes/        Hook, Brand, Statement, Journey, Categories, Offer, End
+scripts/           capture-kuwej.mjs, analyze-reference.sh, tts-gemini.mjs
 ```
 
 ## 8. Commands
 
 ```bash
 npm install
-npm run capture                 # needs access to kuwej.com → fills /assets
-#   review assets/video-content.json (names, prices, WhatsApp exactly as on the site)
-npm run reference               # optional, needs access to whatships.com
-GEMINI_API_KEY=… npm run tts:gemini   # or put a WAV in assets/audio/ and set audio.voiceover
-npm run studio                  # live preview
-npm run render:safezones        # check the safe zones (overlay)
-npm run render                  # → out/kuwej-reel.mp4 (H.264, 900 frames)
+npm run studio                # live preview
+npm run render                # → out/kuwej-reel.mp4
+npm run render:safezones      # safe-zone overlay check
+GEMINI_API_KEY=… npm run tts:gemini   # adds the voice-over (or drop a WAV in assets/audio/ and set audio.voiceover)
 ```
 
-## 9. Final checklist
+## 9. Checklist
 
-- [ ] Background `#EDEDED` everywhere; only `#0746C0` and `#1A1A1A` as extra colours (`src/theme.ts`)
-- [ ] Logo is the site's own file, black text + blue icon (capture prints the colour check), no distortion
-- [ ] Slogan exactly « plus mieux, c'est sûr ! » (`SLOGAN` in `Cta.tsx`)
-- [ ] All categories from the site shown except Ordinateurs and Mode (`excludedCategories` in `kuwej-data.json`)
-- [ ] 1–2 products per category, names and prices identical to the site (currency included)
-- [ ] WhatsApp number identical to the site
-- [ ] No text in the top 250 px or the bottom 380 px (`npm run render:safezones`)
-- [ ] 1080 × 1920, 30 fps, 900 frames, H.264: `ffprobe out/kuwej-reel.mp4`
-- [ ] Voice-over ≤ 29.5 s; `src/script.ts` timings aligned to the audio; subtitles in sync
-- [ ] All copy in French, no English in the video
-- [ ] Reference analysed and `timing.ts` adjusted (only possible once whatships.com is reachable)
+- [x] 1080 × 1920, 30 fps, 900 frames, 30.0 s, H.264 yuv420p (ffprobe)
+- [x] Background #EDEDED everywhere; only #0746C0 and #1A1A1A added
+- [x] Original logo file, untouched (dark text + blue icon)
+- [x] Slogan exactly « plus mieux, c'est sûr ! »
+- [x] 7 selling categories shown; Mode and Ordinateurs excluded
+- [x] Names, prices and WhatsApp number taken from the export
+- [x] Text inside y 250–1540 (safe-zone render checked)
+- [x] All copy in French
+- [ ] Voice-over audio: needs a TTS key or a WAV file, then align `src/script.ts`
+- [ ] Optional: swap « Lumière selfie » (out of stock) once a Gadgets product is back in stock

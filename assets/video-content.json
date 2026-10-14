@@ -1,15 +1,312 @@
 {
-  "source": "https://kuwej.com/",
-  "capturedAt": null,
-  "logo": null,
-  "whatsapp": null,
-  "screens": {
-    "home": null,
-    "homeFull": null,
-    "menu": null,
-    "cart": null
+  "source": "https://kuwej.com/ — export mobile fourni (assets/data, assets/screens, assets/categories, assets/products)",
+  "capturedAt": "2026-10-14",
+  "logo": {
+    "src": "logo/kuwej-logo.png",
+    "width": 720,
+    "height": 203
   },
-  "categories": [],
+  "whatsapp": "+243 97 5999 488",
+  "offer": "Livraison gratuite pour toute commande supérieure à 50.00$.",
+  "screens": {
+    "splash": {
+      "src": "screens/01_page_chargement_splash.png",
+      "width": 780,
+      "height": 1688
+    },
+    "home": {
+      "src": "screens/02_page_accueil.png",
+      "width": 780,
+      "height": 1688
+    },
+    "homeFull": null,
+    "homeCategories": {
+      "x": 0,
+      "y": 840,
+      "w": 780,
+      "h": 330
+    },
+    "menu": {
+      "src": "screens/03_menu_categories_mobile.png",
+      "width": 780,
+      "height": 1688
+    },
+    "cart": {
+      "src": "screens/04_panier_mobile.png",
+      "width": 780,
+      "height": 1688
+    },
+    "cartOffer": {
+      "x": 0,
+      "y": 620,
+      "w": 780,
+      "h": 250
+    },
+    "checkout": {
+      "src": "screens/05_page_paiement_mobile.png",
+      "width": 780,
+      "height": 1688
+    }
+  },
+  "categories": [
+    {
+      "name": "Casques Bluetooth",
+      "screenshot": {
+        "src": "categories/12_Casques_Bluetooth.png",
+        "width": 780,
+        "height": 1688
+      },
+      "products": [
+        {
+          "name": "Oraimo OpenLoop Open-Ear Wireless Headphones",
+          "price": "44.00$",
+          "oldPrice": "88.00$",
+          "screenshot": {
+            "src": "products/prod_16_Oraimo_OpenLoop_Headphones.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Oraimo OpenLoop Open-Ear Wireless Headphones — 44 / 88 USD"
+        },
+        {
+          "name": "Airpods Pro – Semi Apple Orginale",
+          "price": "25.00$",
+          "oldPrice": "100.00$",
+          "screenshot": {
+            "src": "products/prod_20_Airpods_Pro_Semi_Originale.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Airpods Pro - semi Apple orginale — 25 / 100 USD"
+        }
+      ]
+    },
+    {
+      "name": "Montres Connectées",
+      "screenshot": {
+        "src": "categories/07_Smart_Watch_Serie.png",
+        "width": 780,
+        "height": 1688
+      },
+      "products": [
+        {
+          "name": "Smart Watch Série 10 Avec 3 Bracelets – Noire – KW90 MAX",
+          "price": "19.00$",
+          "oldPrice": "89.00$",
+          "screenshot": {
+            "src": "products/prod_09_SmartWatch_Serie_10_KW90_MAX.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Smart Watch Série 10 avec 3 Bracelets - Noire - KW90 MAX — 19 / 89 USD"
+        },
+        {
+          "name": "Chargeur Smart Watch Magnétique 15W",
+          "price": "5.00$",
+          "oldPrice": "15.00$",
+          "screenshot": {
+            "src": "products/prod_15_Chargeur_SmartWatch_Magnetique_15W.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Chargeur Smart Watch  Magnétique 15W — 5 / 15 USD"
+        }
+      ]
+    },
+    {
+      "name": "Téléphones",
+      "screenshot": {
+        "src": "categories/16_Telephones.png",
+        "width": 780,
+        "height": 1688
+      },
+      "products": [
+        {
+          "name": "Chargeur IPhone Type-C Vers Type-C 20W",
+          "price": "10.00$",
+          "oldPrice": "15.00$",
+          "screenshot": {
+            "src": "products/prod_24_Chargeur_iPhone_TypeC_TypeC_20W.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Chargeur iPhone Type-C vers Type-C 20W — 10 / 15 USD"
+        }
+      ]
+    },
+    {
+      "name": "Accessoires Oraimo",
+      "screenshot": {
+        "src": "categories/01_Accessoires_Oraimo.png",
+        "width": 780,
+        "height": 1688
+      },
+      "products": [
+        {
+          "name": "Oraimo Boom 30W Wireless Speaker",
+          "price": "95.00$",
+          "oldPrice": "190.00$",
+          "screenshot": {
+            "src": "products/prod_03_Oraimo_Boom_30W_Speaker.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Oraimo Boom 30W Wireless Speaker — 95 / 190 USD"
+        },
+        {
+          "name": "Oraimo PowerBox 600 60000mAh Power Bank",
+          "price": "99.00$",
+          "oldPrice": "140.00$",
+          "screenshot": {
+            "src": "products/prod_07_Oraimo_PowerBox_600_60000mAh.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Oraimo PowerBox 600 60000mAh Power Bank — 99 / 140 USD"
+        }
+      ]
+    },
+    {
+      "name": "Gadgets & Accessoires",
+      "screenshot": {
+        "src": "categories/21_Lumieres_Selfies.png",
+        "width": 780,
+        "height": 1688
+      },
+      "products": [
+        {
+          "name": "Lumière selfie",
+          "price": "10.00$",
+          "oldPrice": null,
+          "screenshot": {
+            "src": "products/prod_30_Lumiere_Selfie.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Lumière selfie — 10 USD (épuisé sur le site)"
+        }
+      ]
+    },
+    {
+      "name": "Abonnement & streaming",
+      "screenshot": {
+        "src": "categories/22_Abonnement_Streaming.png",
+        "width": 780,
+        "height": 1688
+      },
+      "products": [
+        {
+          "name": "Abonnement Apple One – Kinshasa RDC",
+          "price": "13.00$ / mois",
+          "oldPrice": "25.00$",
+          "screenshot": {
+            "src": "products/prod_31_Abonnement_Apple_One.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Abonnement Apple One - Kinshasa RDC — 13 / 25 USD, affiché « 13.00$ / mois »"
+        }
+      ]
+    },
+    {
+      "name": "kuwej Brand",
+      "screenshot": {
+        "src": "categories/23_Kuwej_Brand.png",
+        "width": 780,
+        "height": 1688
+      },
+      "products": [
+        {
+          "name": "Coque Airpods Pro 2, KUWEJ En Silicone Couleur Blanche",
+          "price": "5.00$",
+          "oldPrice": "10.00$",
+          "screenshot": {
+            "src": "products/prod_23_Coque_Airpods_Pro_2_Kuwej_Blanche.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Coque Airpods Pro 2, KUWEJ en silicone Couleur Blanche — 5 / 10 USD"
+        },
+        {
+          "name": "Coque Airpods 3, KUWEJ En Silicone Couleur Blanche",
+          "price": "5.00$",
+          "oldPrice": "10.00$",
+          "screenshot": {
+            "src": "products/prod_22_Coque_Airpods_3_Kuwej_Blanche.png",
+            "width": 780,
+            "height": 1688
+          },
+          "photo": {
+            "x": 20,
+            "y": 320,
+            "w": 740,
+            "h": 740
+          },
+          "source": "Coque Airpods 3, KUWEJ en silicone Couleur blanche — 5 / 10 USD"
+        }
+      ]
+    }
+  ],
   "audio": {
     "voiceover": null,
     "music": null,

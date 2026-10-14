@@ -1,0 +1,326 @@
+[
+  {
+    "id": 440,
+    "name": "Abonnement & streaming",
+    "slug": "abonnement-streaming",
+    "count": 6,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/abonnement-streaming/"
+  },
+  {
+    "id": 387,
+    "name": "Accessoires Oraimo",
+    "slug": "accessoires-oraimo",
+    "count": 85,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/accessoires-oraimo/"
+  },
+  {
+    "id": 404,
+    "name": "Airprods Authentique",
+    "slug": "airprods-authentique",
+    "count": 7,
+    "parent_id": 384,
+    "parent_name": "Casques Bluetooth",
+    "url": "https://kuwej.com/product-category/casques-bluetooth/airprods-authentique/"
+  },
+  {
+    "id": 424,
+    "name": "Bracelets Montres",
+    "slug": "bracelets-montres",
+    "count": 5,
+    "parent_id": 411,
+    "parent_name": "Montres Connectées",
+    "url": "https://kuwej.com/product-category/montres-connectees/bracelets-montres/"
+  },
+  {
+    "id": 534,
+    "name": "Câbles & Adaptateurs Oraimo",
+    "slug": "cables-adaptateurs-oraimo",
+    "count": 18,
+    "parent_id": 387,
+    "parent_name": "Accessoires Oraimo",
+    "url": "https://kuwej.com/product-category/accessoires-oraimo/cables-adaptateurs-oraimo/"
+  },
+  {
+    "id": 408,
+    "name": "Casque Bluetooth Tendance",
+    "slug": "casque-bluetooth-tendance",
+    "count": 10,
+    "parent_id": 384,
+    "parent_name": "Casques Bluetooth",
+    "url": "https://kuwej.com/product-category/casques-bluetooth/casque-bluetooth-tendance/"
+  },
+  {
+    "id": 384,
+    "name": "Casques Bluetooth",
+    "slug": "casques-bluetooth",
+    "count": 26,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/casques-bluetooth/"
+  },
+  {
+    "id": 423,
+    "name": "Chargeurs Montres Connectées",
+    "slug": "chargeurs-montres-connectees",
+    "count": 1,
+    "parent_id": 411,
+    "parent_name": "Montres Connectées",
+    "url": "https://kuwej.com/product-category/montres-connectees/chargeurs-montres-connectees/"
+  },
+  {
+    "id": 389,
+    "name": "Chargeurs Oraimo",
+    "slug": "chargeurs-oraimo",
+    "count": 11,
+    "parent_id": 387,
+    "parent_name": "Accessoires Oraimo",
+    "url": "https://kuwej.com/product-category/accessoires-oraimo/chargeurs-oraimo/"
+  },
+  {
+    "id": 422,
+    "name": "Chargeurs Téléphones",
+    "slug": "chargeurs-telephones",
+    "count": 18,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/chargeurs-telephones/"
+  },
+  {
+    "id": 533,
+    "name": "Écouteurs & Audio Oraimo",
+    "slug": "ecouteurs-audio-oraimo",
+    "count": 36,
+    "parent_id": 387,
+    "parent_name": "Accessoires Oraimo",
+    "url": "https://kuwej.com/product-category/accessoires-oraimo/ecouteurs-audio-oraimo/"
+  },
+  {
+    "id": 410,
+    "name": "Gadgets & Accessoires",
+    "slug": "gadgets-accessoires",
+    "count": 8,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/gadgets-accessoires/"
+  },
+  {
+    "id": 412,
+    "name": "Gaming",
+    "slug": "gaming",
+    "count": 0,
+    "parent_id": 410,
+    "parent_name": "Gadgets & Accessoires",
+    "url": "https://kuwej.com/product-category/gadgets-accessoires/gaming/"
+  },
+  {
+    "id": 409,
+    "name": "Infinix Mobile",
+    "slug": "infinix-mobile",
+    "count": 0,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/infinix-mobile/"
+  },
+  {
+    "id": 388,
+    "name": "iPhones",
+    "slug": "iphones",
+    "count": 9,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/iphones/"
+  },
+  {
+    "id": 386,
+    "name": "Itel Mobile",
+    "slug": "itel-mobile",
+    "count": 0,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/itel-mobile/"
+  },
+  {
+    "id": 385,
+    "name": "kuwej Brand",
+    "slug": "kuwej-brand",
+    "count": 6,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/kuwej-brand/"
+  },
+  {
+    "id": 418,
+    "name": "Lumières Chambres",
+    "slug": "lumieres-chambres",
+    "count": 0,
+    "parent_id": 410,
+    "parent_name": "Gadgets & Accessoires",
+    "url": "https://kuwej.com/product-category/gadgets-accessoires/lumieres-chambres/"
+  },
+  {
+    "id": 420,
+    "name": "Lumières Selfies",
+    "slug": "lumieres-selfies",
+    "count": 1,
+    "parent_id": 410,
+    "parent_name": "Gadgets & Accessoires",
+    "url": "https://kuwej.com/product-category/gadgets-accessoires/lumieres-selfies/"
+  },
+  {
+    "id": 493,
+    "name": "lunettes intelligentes",
+    "slug": "lunettes-intelligentes",
+    "count": 2,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/lunettes-intelligentes/"
+  },
+  {
+    "id": 426,
+    "name": "Maillots & Baskets",
+    "slug": "maillots-baskets",
+    "count": 0,
+    "parent_id": 413,
+    "parent_name": "Tendance & Mode",
+    "url": "https://kuwej.com/product-category/tendance-mode/maillots-baskets/"
+  },
+  {
+    "id": 411,
+    "name": "Montres Connectées",
+    "slug": "montres-connectees",
+    "count": 31,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/montres-connectees/"
+  },
+  {
+    "id": 407,
+    "name": "Ordinateurs Portables",
+    "slug": "ordinateurs-portables",
+    "count": 0,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/ordinateurs-portables/"
+  },
+  {
+    "id": 425,
+    "name": "Pochettes Airpods",
+    "slug": "pochettes-airpods",
+    "count": 1,
+    "parent_id": 384,
+    "parent_name": "Casques Bluetooth",
+    "url": "https://kuwej.com/product-category/casques-bluetooth/pochettes-airpods/"
+  },
+  {
+    "id": 421,
+    "name": "Pochettes Téléphones",
+    "slug": "pochettes-telephones",
+    "count": 0,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/pochettes-telephones/"
+  },
+  {
+    "id": 390,
+    "name": "Power bank oraimo",
+    "slug": "power-bank-oraimo",
+    "count": 20,
+    "parent_id": 387,
+    "parent_name": "Accessoires Oraimo",
+    "url": "https://kuwej.com/product-category/accessoires-oraimo/power-bank-oraimo/"
+  },
+  {
+    "id": 501,
+    "name": "Produits Numeriques",
+    "slug": "produits-numeriques",
+    "count": 0,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/produits-numeriques/"
+  },
+  {
+    "id": 419,
+    "name": "Ring Lights",
+    "slug": "ring-lights",
+    "count": 0,
+    "parent_id": 410,
+    "parent_name": "Gadgets & Accessoires",
+    "url": "https://kuwej.com/product-category/gadgets-accessoires/ring-lights/"
+  },
+  {
+    "id": 403,
+    "name": "Samsung",
+    "slug": "samsung",
+    "count": 0,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/samsung/"
+  },
+  {
+    "id": 415,
+    "name": "Smart Watch Serie",
+    "slug": "smart-watch-serie",
+    "count": 19,
+    "parent_id": 411,
+    "parent_name": "Montres Connectées",
+    "url": "https://kuwej.com/product-category/montres-connectees/smart-watch-serie/"
+  },
+  {
+    "id": 417,
+    "name": "Smart Watch Sim",
+    "slug": "smart-watch-sim",
+    "count": 1,
+    "parent_id": 411,
+    "parent_name": "Montres Connectées",
+    "url": "https://kuwej.com/product-category/montres-connectees/smart-watch-sim/"
+  },
+  {
+    "id": 414,
+    "name": "Smart Watches Ultra",
+    "slug": "smart-watches-ultra",
+    "count": 5,
+    "parent_id": 411,
+    "parent_name": "Montres Connectées",
+    "url": "https://kuwej.com/product-category/montres-connectees/smart-watches-ultra/"
+  },
+  {
+    "id": 383,
+    "name": "Tablettes Portables",
+    "slug": "tablettes-portables",
+    "count": 0,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/tablettes-portables/"
+  },
+  {
+    "id": 405,
+    "name": "Tecno Mobile",
+    "slug": "tecno-mobile",
+    "count": 0,
+    "parent_id": 406,
+    "parent_name": "Téléphones",
+    "url": "https://kuwej.com/product-category/telephones-3/tecno-mobile/"
+  },
+  {
+    "id": 406,
+    "name": "Téléphones",
+    "slug": "telephones-3",
+    "count": 26,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/telephones-3/"
+  },
+  {
+    "id": 413,
+    "name": "Tendance & Mode",
+    "slug": "tendance-mode",
+    "count": 0,
+    "parent_id": 0,
+    "parent_name": null,
+    "url": "https://kuwej.com/product-category/tendance-mode/"
+  }
+]

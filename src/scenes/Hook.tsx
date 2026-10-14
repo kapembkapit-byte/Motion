@@ -1,67 +1,61 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
-import {content} from '../content';
-import {clamp, glide, mix, pop, ramp} from '../components/anim';
-import {Kinetic} from '../components/Kinetic';
-import {Logo} from '../components/Logo';
-import {Phone} from '../components/Phone';
-import {Screen} from '../components/Screen';
-import {COLORS, PHONE_Y} from '../theme';
-import {SAFE_TOP} from '../timing';
+import {content, photoRect, type Product} from '../content';
+import {clamp, easeInOut, glide, mix} from '../components/anim';
+import {Crop} from '../components/Crop';
+import {Headline} from '../components/Headline';
+import {SHADOW} from '../theme';
 
-// 0 – 3 s · Hook: slam title + phone whipping up from below, then the logo.
-export const Hook: React.FC = () => {
+// Bubble paths: start off-canvas → resting spot (kept clear of the title band).
+const BUBBLES = [
+  {from: [-300, 200], to: [200, 470], size: 290, delay: 0},
+  {from: [1400, 300], to: [880, 520], size: 250, delay: 3},
+  {from: [-300, 1500], to: [170, 1330], size: 270, delay: 6},
+  {from: [1400, 1700], to: [900, 1340], size: 300, delay: 2},
+  {from: [600, 2300], to: [560, 1450], size: 190, delay: 8},
+  {from: [700, -300], to: [640, 330], size: 170, delay: 5},
+];
+
+const Bubble: React.FC<{p: Product; i: number}> = ({p, i}) => {
   const f = useCurrentFrame();
-  const enter = glide(f, 3);
-  const exit = ramp(f, 84, 90);
-  const underline = ramp(f, 22, 34);
-  const logoIn = pop(f, 54, 13);
+  const b = BUBBLES[i];
+  const t = glide(f, b.delay);
+  const tPrev = glide(f - 1, b.delay);
+  const implode = interpolate(f, [42, 56], [0, 1], {...clamp, easing: easeInOut});
+  const x = mix(mix(b.from[0], b.to[0], t), 540, implode);
+  const y = mix(mix(b.from[1], b.to[1], t), 900, implode);
+  const speed = Math.abs(t - tPrev) * 900 + implode * (1 - implode) * 60;
+  const drift = Math.sin((f + i * 9) / 9) * 10;
+  const scale = (1 - implode) * (0.9 + 0.1 * t);
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: x - b.size / 2,
+        top: y - b.size / 2 + drift,
+        transform: `scale(${scale}) rotate(${(1 - t) * (i % 2 ? 30 : -30)}deg)`,
+        filter: speed > 1 ? `blur(${Math.min(18, speed * 0.5)}px)` : undefined,
+        borderRadius: '50%',
+        boxShadow: SHADOW,
+        overflow: 'hidden',
+      }}
+    >
+      <Crop shot={p.screenshot} rect={photoRect(p)} width={b.size} radius={b.size / 2} />
+    </div>
+  );
+};
 
+// 0 – 2 s · Hook: real products fly in with motion blur, title slams, then implodes.
+export const Hook: React.FC = () => {
+  const products = content.categories.map((c) => c.products[0]).filter(Boolean).slice(0, BUBBLES.length);
   return (
     <AbsoluteFill>
-      <div style={{position: 'absolute', top: SAFE_TOP + 10, left: 0, right: 0, textAlign: 'center'}}>
-        <Kinetic text="L'élégance…" at={0} out={48} size={128} serif mode="slam" stagger={0} />
-        <div style={{display: 'inline-block', position: 'relative'}}>
-          <Kinetic text="dans ta poche ?" at={10} out={50} size={76} color={COLORS.blue} stagger={3} />
-          <div
-            style={{
-              position: 'absolute',
-              left: 0,
-              bottom: -10,
-              height: 7,
-              borderRadius: 4,
-              background: COLORS.ink,
-              width: `${underline * 100}%`,
-              opacity: 1 - ramp(f, 48, 56),
-            }}
-          />
-        </div>
+      {products.map((p, i) => (
+        <Bubble key={i} p={p} i={i} />
+      ))}
+      <div style={{position: 'absolute', top: 760, left: 0, right: 0}}>
+        <Headline lines={[{text: 'Envie', size: 200}, {text: "d'élégance ?", box: true, size: 150}]} at={2} stagger={10} out={44} />
       </div>
-
-      <div
-        style={{
-          position: 'absolute',
-          top: SAFE_TOP + 70,
-          left: 0,
-          right: 0,
-          display: 'flex',
-          justifyContent: 'center',
-          opacity: interpolate(logoIn, [0, 0.5], [0, 1], clamp) * (1 - exit),
-          transform: `translateY(${-40 * exit}px) scale(${0.72 + 0.28 * logoIn})`,
-        }}
-      >
-        <Logo height={128} />
-      </div>
-
-      <Phone
-        x={540}
-        y={mix(2550, PHONE_Y, enter)}
-        rotate={mix(-14, 0, enter)}
-        tiltX={mix(28, 0, enter)}
-        scale={interpolate(f, [0, 90], [0.96, 1.035], clamp)}
-      >
-        <Screen shot={content.screens.home} label="accueil (home.png)" />
-      </Phone>
     </AbsoluteFill>
   );
 };

@@ -10,12 +10,15 @@ export const SAFE_BOTTOM = H - 380; // y = 1540
 
 export const s = (seconds: number) => Math.round(seconds * FPS);
 
-// Act boundaries (frames). Change here only; scenes read these values.
-export const HOOK = {from: 0, to: s(3)}; // 0 – 3 s
-export const STORE = {from: s(3), to: s(10)}; // 3 – 10 s
-export const STORE_MENU_AT = s(6.5); // home scroll -> category menu
-export const CATS = {from: s(10), to: s(24)}; // 10 – 24 s
-export const CTA = {from: s(24), to: TOTAL}; // 24 – 30 s
-export const ENDCARD_AT = s(26.4); // cart -> logo / slogan end card
+// Act boundaries (frames), mirroring the reference rhythm compressed to 30 s:
+// hook → brand reveal → statement → app journey → products → offer → end card.
+export const HOOK = {from: 0, to: 60}; // 0 – 2 s
+export const BRAND = {from: 60, to: 140}; // 2 – 4.7 s
+export const STATEMENT = {from: 140, to: 210}; // 4.7 – 7 s
+export const JOURNEY = {from: 210, to: 300}; // 7 – 10 s
+export const CATS = {from: 300, to: 720}; // 10 – 24 s
+export const OFFER = {from: 720, to: 790}; // 24 – 26.3 s
+export const END = {from: 790, to: TOTAL}; // 26.3 – 30 s
+export const TAPES = {from: 66, to: 212}; // ticker tapes span brand + statement
 
 export const len = (r: {from: number; to: number}) => r.to - r.from;

@@ -6,8 +6,9 @@ export const COLORS = {
 } as const;
 
 export const FONTS = {
-  sans: 'Manrope, sans-serif',
-  serif: '"Instrument Serif", serif',
+  punch: '"Barlow Condensed", sans-serif', // kinetic titles (reference mechanic)
+  sans: 'Manrope, sans-serif', // product names, UI, buttons
+  serif: '"Instrument Serif", serif', // elegance accents + slogan
 } as const;
 
 // Phone mockup geometry (screen keeps the 390 x 844 capture ratio).
@@ -26,5 +27,4 @@ export const PHONE = {
   radius: 68,
 };
 
-// Default phone centre: below the headline block, inside the safe zone.
-export const PHONE_Y = 1005;
+export const SHADOW = '0 50px 90px -30px rgba(26,26,26,0.45), 0 18px 36px -18px rgba(26,26,26,0.35)';
