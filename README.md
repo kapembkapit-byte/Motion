@@ -11,6 +11,7 @@ npm install
 npm run studio            # preview
 npm run render            # version A « Pub app » → out/kuwej-reel.mp4
 npm run render:afro       # version B « Éditorial / Afro » → out/kuwej-reel-afro.mp4
+npm run render:signature  # version C « Signature » (55 s, music only) → out/kuwej-reel-signature.mp4
 npm run render:safezones  # safe-zone overlay check
 python3 scripts/place-voiceover.py      # place the Fish Audio voice-over on the beats (29.9 s)
 npm run audio                          # music + sound effects + masters for A and B (pip install -r scripts/audio/requirements.txt)

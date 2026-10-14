@@ -157,6 +157,33 @@ Same voice-over, same timing, same real content (screenshots, products, prices, 
   - Structure: guitar intro, crash on the logo, groove, conga fill into the categories, full sebene, guitar break, re-entry on the end card, final A-major strum on the slogan.
   - Sound effects synced to the editorial animations; the same ducking/mastering (−14 LUFS, exactly 29.9 s).
 
+## 6d. Version C « Signature » (`KuwejReelSignature`, 55 s, music only)
+
+Built on the second uploaded reference (the Havyn ad, 16:9, 55 s). Its structure:
+- word-by-word kinetic typography with an accent colour;
+- two rows of products scrolling, then a ring of products;
+- a giant word crossing the frame, then the logo reveal;
+- phones rising with real UI;
+- short alternating statements;
+- an end card.
+
+The music is **the track from that video** (extracted, −14 LUFS, exactly 55.000 s), at 110 BPM (beat 0.545 s). The section starts copy the reference cuts (3.03, 4.7, 9.37, 13.9, 16.7, 18.7, 20.2, 24.8, 29.37, 30.7, 34.7, 40.27, 43.87, 48.13 s), so every change lands on the same musical accent; the words appear on the beat. No voice-over.
+
+French copy written for Kuwej (none of the reference's text):
+- « Ce que tu aimes, ce qui te ressemble » · « Tout est au même endroit. » · « voici » · logo · « Une nouvelle façon d'acheter en ligne »;
+- Casques Bluetooth / Montres Connectées / Téléphones / « et bien plus encore, ici, à Kinshasa »;
+- « Cherche ce que tu veux » · « Découvre les nouveautés » · « Un coup de cœur ? » · « Ajoute-le au panier » (real product page → real cart);
+- « Tu l'adores ? Et le prix aussi. Profite des promos » (19.00$ ~~89.00$~~ · 44.00$ ~~88.00$~~ · 95.00$ ~~190.00$~~);
+- « Prêt à commander ? » · « Valide ta commande · Livraison gratuite au-delà de 50.00$ » (real checkout page + banner);
+- « Une question ? Le service client Kuwej te répond sur WhatsApp » (+243 97 5999 488);
+- Accessoires Oraimo / Gadgets & Accessoires / Abonnement & streaming / kuwej Brand;
+- « Du coup de cœur, à la commande, à la livraison, tout se passe sur kuwej.com »;
+- end card (logo, « Commande sur kuwej.com », WhatsApp, slogan).
+
+The reference alternates purple and lavender backgrounds. Here **#EDEDED stays on every frame** (brand rule), and the reference's green accent becomes Kuwej blue.
+
+⚠ **Music rights**: this track belongs to the reference ad. Before publishing, check that Kuwej holds a licence for it, or replace it (`assets/audio/music-signature.wav`). The timing does not depend on the file, only on the 110 BPM grid.
+
 ## 7. Project
 
 ```
